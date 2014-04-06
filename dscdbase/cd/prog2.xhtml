@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>prog2</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#assignment_operator">assignment_operator</a>
+                </li>
+                <li>
+                  <a href="#begin">begin</a>
+                </li>
+                <li>
+                  <a href="#break">break</a>
+                </li>
+                <li>
+                  <a href="#continue">continue</a>
+                </li>
+                <li>
+                  <a href="#delete">delete</a>
+                </li>
+                <li>
+                  <a href="#do_if">do_if</a>
+                </li>
+                <li>
+                  <a href="#do_if_not">do_if_not</a>
+                </li>
+                <li>
+                  <a href="#do_while">do_while</a>
+                </li>
+                <li>
+                  <a href="#do_while_not">do_while_not</a>
+                </li>
+                <li>
+                  <a href="#ellipsis">ellipsis</a>
+                </li>
+                <li>
+                  <a href="#else">else</a>
+                </li>
+                <li>
+                  <a href="#empty">empty</a>
+                </li>
+                <li>
+                  <a href="#fallthrough">fallthrough</a>
+                </li>
+                <li>
+                  <a href="#goto">goto</a>
+                </li>
+                <li>
+                  <a href="#if">if</a>
+                </li>
+                <li>
+                  <a href="#if_exp">if_exp</a>
+                </li>
+                <li>
+                  <a href="#if_not">if_not</a>
+                </li>
+                <li>
+                  <a href="#post_increment">post_increment</a>
+                </li>
+                <li>
+                  <a href="#post_decrement">post_decrement</a>
+                </li>
+                <li>
+                  <a href="#pre_increment">pre_increment</a>
+                </li>
+                <li>
+                  <a href="#pre_decrement">pre_decrement</a>
+                </li>
+                <li>
+                  <a href="#label">label</a>
+                </li>
+                <li>
+                  <a href="#namespace_selector">namespace_selector</a>
+                </li>
+                <li>
+                  <a href="#new">new</a>
+                </li>
+                <li>
+                  <a href="#null">null</a>
+                </li>
+                <li>
+                  <a href="#print">print</a>
+                </li>
+                <li>
+                  <a href="#println">println</a>
+                </li>
+                <li>
+                  <a href="#value">value</a>
+                </li>
+                <li>
+                  <a href="#void">void</a>
+                </li>
+                <li>
+                  <a href="#while_not">while_not</a>
+                </li>
+                <li>
+                  <a href="#yield">yield</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">prog2</span></h1><hr/><p>
+    A CD that represents concepts about general programming.
+  </p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://drosoft.org/cd/prog2.ocd">http://drosoft.org/cd/prog2.ocd</a></dd><dt>Base</dt><dd><a href="http://drosoft.org/cd">http://drosoft.org/cd</a></dd><dt>Date</dt><dd>2013-12-08</dd><dt>Status</dt><dd>private</dd><dt>Version</dt><dd>1.0</dd></dl></div>
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="assignment_operator"/><b class="om-name">assignment_operator</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">All assignment operators can be represented as an example of this declaration. This declaration takes three arguments: a variable to be assigned, a binary operation, and a value or expression to use as the second argument of the binary function. There is no return value, in languages where a return value is required, it returns the void return value.<hr/>
+    
+    
+    
+
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      The following represents (x += 1).
+      
+    </div></div><div class="panel-body">
+         assignment_operator 
+        
+           x 
+        
+         plus 
+         1 
+      </div></div>
+
+    
+    <div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+      The following represents that (a += b) is equivalent to (a = a + b).
+    </div></div><div class="panel-body">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+        <mrow><mrow><mi>assignment_operator</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mo>+</mo><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>)</mo></mrow></mrow></mrow>
+      </math>
+    </div></div>
+
+    
+    <div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+      The following represents that (a += 1) is equivalent to (a++).
+    </div></div><div class="panel-body">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+        <mrow><mrow><mi>assignment_operator</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mo>+</mo><mo>,</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>void</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>post_increment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow>
+      </math>
+    </div></div>
+
+    
+    <div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+      The following represents that (a += 1) is equivalent to (++a).
+    </div></div><div class="panel-body">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+        <mrow><mrow><mi>assignment_operator</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mo>+</mo><mo>,</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>void</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>pre_increment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow>
+      </math>
+    </div></div>
+
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="begin"/><b class="om-name">begin</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This is an N-ary function that executes all of its arguments in sequence, then returns the output of the last argument. See also: Lisp progn. See also: Scheme begin.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="break"/><b class="om-name">break</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="continue"/><b class="om-name">continue</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="delete"/><b class="om-name">delete</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="do_if"/><b class="om-name">do_if</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="do_if_not"/><b class="om-name">do_if_not</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="do_while"/><b class="om-name">do_while</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="do_while_not"/><b class="om-name">do_while_not</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="ellipsis"/><b class="om-name">ellipsis</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="else"/><b class="om-name">else</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="empty"/><b class="om-name">empty</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="fallthrough"/><b class="om-name">fallthrough</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="goto"/><b class="om-name">goto</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="if"/><b class="om-name">if</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#statement</span><span class="clearfix"/></span></div><div class="panel-body">Unlike prog1:if (which represents a void-returning ternary operator), this statement represents a binary operator. This statement takes 2 arguments: the condition, and the consequent. There is no return value. See also: Lisp/Scheme when.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="if_exp"/><b class="om-name">if_exp</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">Unlike prog1:if (which represents a void-returning ternary operator), this application represents a value-returning ternary operator. This statement takes 3 arguments: the condition, the consequent, and the alternative. If the condition is true, then the return value is that of the consequent, if it is false, then the return value is that of the alternative. See also: C ternary operator (?:). See also: Lisp/Scheme if.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="if_not"/><b class="om-name">if_not</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#statement</span><span class="clearfix"/></span></div><div class="panel-body">Unlike prog1:if (which represents a void-returning ternary operator), this statement represents a binary operator. This statement takes 2 arguments: the condition, and the alternative. There is no return value. See also: Lisp/Scheme unless.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="post_increment"/><b class="om-name">post_increment</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="post_decrement"/><b class="om-name">post_decrement</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="pre_increment"/><b class="om-name">pre_increment</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="pre_decrement"/><b class="om-name">pre_decrement</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="label"/><b class="om-name">label</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="namespace_selector"/><b class="om-name">namespace_selector</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="new"/><b class="om-name">new</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="null"/><b class="om-name">null</b><span class="om-role pull-right"> a constant</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="print"/><b class="om-name">print</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#statement</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="println"/><b class="om-name">println</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#statement</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="value"/><b class="om-name">value</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This is an N-ary function that executes all of its arguments in sequence, then returns the output of the first argument. See also: Lisp prog0. See also: Scheme begin0.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="void"/><b class="om-name">void</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This is an N-ary function that executes all of its arguments in sequence, but does nothing with their return values, they are all discarded. See also: Shell (sh, bash, csh, zsh) colon (:) command. See also: C blocks ({}). See also: JavaScript void(). Represents no return value.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="while_not"/><b class="om-name">while_not</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="yield"/><b class="om-name">yield</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Java class definition.<hr/>
+    
+    
+    
+  </div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

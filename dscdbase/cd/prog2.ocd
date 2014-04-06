@@ -1,0 +1,357 @@
+<CD xmlns="http://www.openmath.org/OpenMathCD">
+
+  <CDComment>
+    LICENSE
+  </CDComment>
+
+  <!-- Required -->
+  <CDName> prog2 </CDName>
+  <CDBase> http://drosoft.org/cd </CDBase>
+  <CDURL> http://drosoft.org/cd/prog2.ocd </CDURL>
+  <CDDate> 2013-12-08 </CDDate>
+  <CDVersion> 1 </CDVersion>
+  <CDRevision> 0 </CDRevision>
+  <CDStatus> private </CDStatus>
+
+  <Description>
+    A CD that represents concepts about general programming.
+  </Description>
+
+  <CDDefinition>
+    <Name> assignment_operator </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      All assignment operators can be represented as an example of this declaration. This declaration takes three arguments: a variable to be assigned, a binary operation, and a value or expression to use as the second argument of the binary function. There is no return value, in languages where a return value is required, it returns the void return value.
+    </Description>
+
+    <Example>
+      The following represents (x += 1).
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <m:csymbol cd="prog2"> assignment_operator </m:csymbol>
+        <drox:dt>
+          <m:ci> x </m:ci>
+        </drox:dt>
+        <m:csymbol cd="arith1"> plus </m:csymbol>
+        <m:cn> 1 </m:cn>
+      </drox:dl>
+    </Example>
+
+    <CMP>
+      The following represents that (a += b) is equivalent to (a = a + b).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="assignment_operator"/>
+	        <OMV name="a"/>
+            <OMS cd="arith1" name="plus"/>
+	        <OMV name="b"/>
+          </OMA>
+          <OMA>
+            <OMS cd="prog1" name="assignment"/>
+	        <OMV name="a"/>
+            <OMA>
+              <OMS cd="arith1" name="plus"/>
+	          <OMV name="a"/>
+	          <OMV name="b"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+    <CMP>
+      The following represents that (a += 1) is equivalent to (a++).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="assignment_operator"/>
+	        <OMV name="a"/>
+            <OMS cd="arith1" name="plus"/>
+	        <OMI>1</OMI>
+          </OMA>
+          <OMA>
+            <OMS cd="prog2" name="void"/>
+            <OMA>
+              <OMS cd="prog2" name="post_increment"/>
+	          <OMV name="a"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+    <CMP>
+      The following represents that (a += 1) is equivalent to (++a).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="assignment_operator"/>
+	        <OMV name="a"/>
+            <OMS cd="arith1" name="plus"/>
+	        <OMI>1</OMI>
+          </OMA>
+          <OMA>
+            <OMS cd="prog2" name="void"/>
+            <OMA>
+              <OMS cd="prog2" name="pre_increment"/>
+	          <OMV name="a"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> begin </Name>
+    <Role> application </Role>
+    <Description>
+      This is an N-ary function that executes all of its arguments in sequence, then returns the output of the last argument. See also: Lisp progn. See also: Scheme begin.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> break </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> continue </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> delete </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> do_if </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> do_if_not </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> do_while </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> do_while_not </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> ellipsis </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> else </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> empty </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> fallthrough </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> goto </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> if </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      Unlike prog1:if (which represents a void-returning ternary operator), this statement represents a binary operator. This statement takes 2 arguments: the condition, and the consequent. There is no return value.
+      See also: Lisp/Scheme when.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> if_exp </Name>
+    <Role> application </Role>
+    <Description>
+      Unlike prog1:if (which represents a void-returning ternary operator), this application represents a value-returning ternary operator. This statement takes 3 arguments: the condition, the consequent, and the alternative. If the condition is true, then the return value is that of the consequent, if it is false, then the return value is that of the alternative. See also: C ternary operator (?:). See also: Lisp/Scheme if.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> if_not </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      Unlike prog1:if (which represents a void-returning ternary operator), this statement represents a binary operator. This statement takes 2 arguments: the condition, and the alternative. There is no return value. 
+      See also: Lisp/Scheme unless.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> post_increment </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> post_decrement </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> pre_increment </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> pre_decrement </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> label </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> namespace_selector </Name>
+    <Role> application </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> new </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> null </Name>
+    <Role> constant </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> print </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> println </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> value </Name>
+    <Role> application </Role>
+    <Description>
+      This is an N-ary function that executes all of its arguments in sequence, then returns the output of the first argument. See also: Lisp prog0. See also: Scheme begin0.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> void </Name>
+    <Role> application </Role>
+    <Description>
+       This is an N-ary function that executes all of its arguments in sequence, but does nothing with their return values, they are all discarded. See also: Shell (sh, bash, csh, zsh) colon (:) command. See also: C blocks ({}). See also: JavaScript void(). Represents no return value.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> while_not </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> yield </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+  </CDDefinition>
+
+</CD>
