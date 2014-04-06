@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>arith1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#lcm">lcm</a>
+                </li>
+                <li>
+                  <a href="#gcd">gcd</a>
+                </li>
+                <li>
+                  <a href="#plus">plus</a>
+                </li>
+                <li>
+                  <a href="#unary_minus">unary_minus</a>
+                </li>
+                <li>
+                  <a href="#minus">minus</a>
+                </li>
+                <li>
+                  <a href="#times">times</a>
+                </li>
+                <li>
+                  <a href="#divide">divide</a>
+                </li>
+                <li>
+                  <a href="#power">power</a>
+                </li>
+                <li>
+                  <a href="#abs">abs</a>
+                </li>
+                <li>
+                  <a href="#root">root</a>
+                </li>
+                <li>
+                  <a href="#sum">sum</a>
+                </li>
+                <li>
+                  <a href="#product">product</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">arith1</span></h1><hr/><p> 
+This CD defines symbols for common arithmetic functions.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/arith1.ocd">http://www.openmath.org/cd/arith1.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="lcm"/><b class="om-name">lcm</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol to represent the n-ary function to return the least common multiple of its arguments.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  lcm(a,b) = a*b/gcd(a,b) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>lcm</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mfrac></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all integers a,b |
+There does not exist a c&gt;0 such that c/a is an Integer and c/b is an
+Integer and lcm(a,b) &gt; c.
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow><mo>⇒</mo><mo>¬</mo><mrow><mo>∃</mo><mo> </mo><mrow><mi>c</mi></mrow><mo>.</mo><mrow><mrow><mi>c</mi><mo>&gt;</mo><mn>0</mn></mrow><mo>∧</mo><mrow><mi>factorof</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mi>factorof</mi><mo>⁡</mo><mrow><mo>(</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mi>c</mi><mo>&lt;</mo><mrow><mi>lcm</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="gcd"/><b class="om-name">gcd</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol to represent the n-ary function to return the gcd (greatest common divisor) of its arguments.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all integers a,b |
+There does not exist a c such that a/c is an Integer and b/c is an
+Integer and c &gt; gcd(a,b).
+
+Note that this implies that gcd(a,b) &gt; 0
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow><mo>⇒</mo><mo>¬</mo><mrow><mo>∃</mo><mo> </mo><mrow><mi>c</mi></mrow><mo>.</mo><mrow><mrow><mfrac><mi>a</mi><mi>c</mi></mfrac><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mfrac><mi>b</mi><mi>c</mi></mfrac><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>c</mi><mo>&gt;</mo><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+gcd(6,9) = 3
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo>(</mo><mn> 6 </mn><mo>,</mo><mn> 9 </mn><mo>)</mo></mrow></mrow><mo>=</mo><mn> 3 </mn></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="plus"/><b class="om-name">plus</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol representing an n-ary commutative function plus.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all a,b | a + b = b + a </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>b</mi><mo>+</mo><mi>a</mi></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="unary_minus"/><b class="om-name">unary_minus</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes unary minus, i.e. the additive inverse.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all a | a + (-a) = 0 </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi></mrow><mo>.</mo><mrow><mrow><mi>a</mi><mo>-</mo><mi>a</mi></mrow><mo>=</mo><mn>0</mn></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="minus"/><b class="om-name">minus</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol representing a binary minus function. This is equivalent to adding the additive inverse.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all a,b | a - b = a + (-b) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="times"/><b class="om-name">times</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol representing an n-ary multiplication function.<hr/>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mfenced><mtable><mtr><mtd><mn> 1 </mn></mtd><mtd><mn> 2 </mn></mtd></mtr><mtr><mtd><mn> 3 </mn></mtd><mtd><mn> 4 </mn></mtd></mtr></mtable></mfenced><mo>⁢</mo><mfenced><mtable><mtr><mtd><mn> 5 </mn></mtd><mtd><mn> 6 </mn></mtd></mtr><mtr><mtd><mn> 7 </mn></mtd><mtd><mn> 8 </mn></mtd></mtr></mtable></mfenced></mrow><mo>=</mo><mfenced><mtable><mtr><mtd><mn> 19 </mn></mtd><mtd><mn> 22 </mn></mtd></mtr><mtr><mtd><mn> 43 </mn></mtd><mtd><mn> 50 </mn></mtd></mtr></mtable></mfenced></mrow>
+</math></div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all a,b | a * 0 = 0 and a * b = a * (b - 1) + a </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mn>0</mn></mrow><mo>=</mo><mn>0</mn></mrow><mo>∧</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo>(</mo><mi>b</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>+</mo><mi>a</mi></mrow></mrow></mrow></mrow>
+</math></div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all a,b,c | a*(b+c) = a*b + a*c </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow><mo>.</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo>(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="divide"/><b class="om-name">divide</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a (binary) division function denoting the first argument right-divided by the second, i.e. divide(a,b)=a*inverse(b). It is the inverse of the multiplication function defined by the symbol times in this CD.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  whenever not(a=0) then a/a = 1 </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi></mrow><mo>.</mo><mrow><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow><mo>⇒</mo><mrow><mfrac><mi>a</mi><mi>a</mi></mfrac><mo>=</mo><mn>1</mn></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="power"/><b class="om-name">power</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a power function. The first argument is raised to the power of the second argument. When the second argument is not an integer, powering is defined in terms of exponentials and logarithms for the complex and real numbers. This operator can represent general powering.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+x\in C implies x^a = exp(a ln x)
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>⇒</mo><mrow><msup><mi>x</mi><mi>a</mi></msup><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+  if n is an integer then
+  x^0 = 1,
+  x^n = x * x^(n-1)
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>⇒</mo><mrow><mrow><msup><mi>x</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow><mo>∧</mo><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></msup></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><msup><mfenced><mtable><mtr><mtd><mn> 1 </mn></mtd><mtd><mn> 2 </mn></mtd></mtr><mtr><mtd><mn> 3 </mn></mtd><mtd><mn> 4 </mn></mtd></mtr></mtable></mfenced><mn>3</mn></msup><mo>=</mo><mfenced><mtable><mtr><mtd><mn> 37 </mn></mtd><mtd><mn> 54 </mn></mtd></mtr><mtr><mtd><mn> 81 </mn></mtd><mtd><mn> 118 </mn></mtd></mtr></mtable></mfenced></mrow>
+</math></div></div>
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><msup><mi>e</mi><mrow><mo>(</mo><mi>i</mi><mo>⁢</mo><mi>π</mi><mo>)</mo></mrow></msup><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="abs"/><b class="om-name">abs</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">A unary operator which represents the absolute value of its argument. The argument should be numerically valued. In the complex case this is often referred to as the modulus.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x,y | abs(x) + abs(y) &gt;= abs(x+y) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>.</mo><mrow><mrow><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow><mo>+</mo><mrow><mo>|</mo><mi>y</mi><mo>|</mo></mrow></mrow><mo>≥</mo><mrow><mo>|</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo>|</mo></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="root"/><b class="om-name">root</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">A binary operator which represents its first argument "lowered" to its n'th root where n is the second argument. This is the inverse of the operation represented by the power symbol defined in this CD. Care should be taken as to the precise meaning of this operator, in particular which root is represented, however it is here to represent the general notion of taking n'th roots. As inferred by the signature relevant to this symbol, the function represented by this symbol is the single valued function, the specific root returned is the one indicated by the first CMP. Note also that the converse of the second CMP is not valid in general.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  x\in C implies root(x,n) = exp(ln(x)/n) </div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>⇒</mo><mrow><mroot><mi>x</mi><mi>n</mi></mroot><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow>
+  </math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all a,n | power(root(a,n),n) = a (if the root exists!) </div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>n</mi></mrow><mo>.</mo><mrow><msup><mroot><mi>a</mi><mi>n</mi></mroot><mi>n</mi></msup><mo>=</mo><mi>a</mi></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="sum"/><b class="om-name">sum</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">An operator taking two arguments, the first being the range of summation, e.g. an integral interval, the second being the function to be summed. Note that the sum may be over an infinite interval.<hr/>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+  This represents the summation of the reciprocals of all the integers between
+  1 and 10 inclusive.
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <munderover><mo>∑</mo><mrow><mrow><mi>x</mi></mrow><mo>=</mo><mn> 1 </mn></mrow><mn> 10 </mn></munderover><mfrac><mn> 1 </mn><mi>x</mi></mfrac>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="product"/><b class="om-name">product</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">An operator taking two arguments, the first being the range of multiplication e.g. an integral interval, the second being the function to be multiplied. Note that the product may be over an infinite interval.<hr/>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+This represents the statement that the factorial of n is equal to the product
+of all the integers between 1 and n inclusive.
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>=</mo><munderover><mo>∏</mo><mrow><mrow><mi>i</mi></mrow><mo>=</mo><mn> 1 </mn></mrow><mi>n</mi></munderover><mi>i</mi></mrow>
+</math></div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

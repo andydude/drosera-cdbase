@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>fns2</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#kernel">kernel</a>
+                </li>
+                <li>
+                  <a href="#apply_to_list">apply_to_list</a>
+                </li>
+                <li>
+                  <a href="#right_compose">right_compose</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">fns2</span></h1><hr/><p>
+    This CD holds further functions concerning functions themselves. A
+    particularly interesting function is
+
+    apply_to_list
+
+    which applies an nary function to all the elements in a specified
+    list. For example, such a function can be used to form sums and
+    products in conjunction with plus and times respectively.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/fns2.ocd">http://www.openmath.org/cd/fns2.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="kernel"/><b class="om-name">kernel</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes the kernel of a given function. This may be defined as the subset of the range of the given function which maps to the identity element of the image of the given function, however no semantics are assumed. The kernel of a function is also known as the null space of the function.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  x in the kernal of f implies that f(x) = 0 </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>x</mi><mo>∈</mo><mrow><mi>kernel</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="apply_to_list"/><b class="om-name">apply_to_list</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol is used to denote the repeated application of an n-ary function on the elements of a given list. For example when used with plus or times this can represent sums and products. The symbol takes two arguments; the first of which is the n-ary function, the second a list.<hr/>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+For all n 1 + 2 + ... + n = n(n+1)/2.
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>n</mi></mrow><mo>.</mo><mrow><mrow><mi>apply_to_list</mi><mo>⁡</mo><mrow><mo>(</mo><mo>+</mo><mo>,</mo><mrow><mi>make_list</mi><mo>⁡</mo><mrow><mo>(</mo><mn> 1 </mn><mo>,</mo><mi>n</mi><mo>,</mo><mi>Id</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn> 1 </mn><mo>)</mo></mrow></mrow><mn> 2 </mn></mfrac></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+One may form a set in the following way. This gives the set {1^2, 2^2,
+... , 10^2 }
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mi>make_list</mi><mo>⁡</mo><mrow><mo>(</mo><mn> 1 </mn><mo>,</mo><mn> 10 </mn><mo>,</mo><mrow><mo>λ</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><msup><mi>x</mi><mn> 2 </mn></msup></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="right_compose"/><b class="om-name">right_compose</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a function forming the right-composition of its two functional arguments.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  right_compose(f,g)(x) = g(f(x)) </div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mo>∀</mo><mo> </mo><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>,</mo><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mrow><mo>(</mo><mrow><mi>right_compose</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

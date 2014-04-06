@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>fns3</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#function">function</a>
+                </li>
+                <li>
+                  <a href="#specification">specification</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">fns3</span></h1><hr/><p>
+    This CD holds further functions concerning functions themselves. A
+    particularly interesting function is
+
+    function
+
+    which constructs a function with given domain and range.
+
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/fns3.ocd">http://www.openmath.org/cd/fns3.ocd</a></dd><dt>Base</dt><dd><a href=""/></dd><dt>Date</dt><dd>2004-06-01</dd><dt>ReviewDate</dt><dd>2006-06-01</dd><dt>Status</dt><dd>experimental</dd><dt>Version</dt><dd>1.1</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="function"/><b class="om-name">function</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes a function constructor. When aplied to at least two arguments, which are sets, the first argument is the domain and the second the range of the function. When applied to at least three arguments, the first two of which are stes and the third of which is a lambda expression, the third argument gives the function specification.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: The domain of the function f constructed this way is the first argument </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>domain</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>function</mi><mo>⁡</mo><mrow><mo>(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo>,</mo><mi>Z</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mi>X</mi></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: The range of the function f constructed this way is the second argument </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>range</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>function</mi><mo>⁡</mo><mrow><mo>(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo>,</mo><mi>Z</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mi>Y</mi></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+The following object defines a function from the natural numbers into
+the integers specificied by the fact that n maps to n(n+1)/2.
+
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+   <mrow><mi>function</mi><mo>⁡</mo><mrow><mo>(</mo><mi mathvariant="double-struck">N</mi><mo>,</mo><mi mathvariant="double-struck">Z</mi><mo>,</mo><mrow><mo>λ</mo><mo> </mo><mrow><mi>n</mi></mrow><mo>.</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn> 1 </mn><mo>)</mo></mrow></mrow><mn> 2 </mn></mfrac></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="specification"/><b class="om-name">specification</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes the specification of a function. It is a unary function. When aplied to its argument, which should be a function applied to three arguments, it returns the third argument of the function, that is, the function specification.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>specification</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>function</mi><mo>⁡</mo><mrow><mo>(</mo><mi mathvariant="double-struck">N</mi><mo>,</mo><mi mathvariant="double-struck">Z</mi><mo>,</mo><mi>f</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mi>f</mi></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+The following object defines a function from the natural numbers into
+the integers specificied by the fact that n maps to n(n+1)/2.
+
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>specification</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>function</mi><mo>⁡</mo><mrow><mo>(</mo><mi mathvariant="double-struck">N</mi><mo>,</mo><mi mathvariant="double-struck">Z</mi><mo>,</mo><mrow><mo>λ</mo><mo> </mo><mrow><mi>n</mi></mrow><mo>.</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn> 1 </mn><mo>)</mo></mrow></mrow><mn> 2 </mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>λ</mo><mo> </mo><mrow><mi>n</mi></mrow><mo>.</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn> 1 </mn><mo>)</mo></mrow></mrow><mn> 2 </mn></mfrac></mrow></mrow>
+</math></div></div>
+</div></div>
+
+
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

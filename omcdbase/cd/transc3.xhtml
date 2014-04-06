@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>transc3</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#log">log</a>
+                </li>
+                <li>
+                  <a href="#ln">ln</a>
+                </li>
+                <li>
+                  <a href="#arcsin">arcsin</a>
+                </li>
+                <li>
+                  <a href="#arccos">arccos</a>
+                </li>
+                <li>
+                  <a href="#arctan">arctan</a>
+                </li>
+                <li>
+                  <a href="#arcsec">arcsec</a>
+                </li>
+                <li>
+                  <a href="#arccsc">arccsc</a>
+                </li>
+                <li>
+                  <a href="#arccot">arccot</a>
+                </li>
+                <li>
+                  <a href="#arcsinh">arcsinh</a>
+                </li>
+                <li>
+                  <a href="#arccosh">arccosh</a>
+                </li>
+                <li>
+                  <a href="#arctanh">arctanh</a>
+                </li>
+                <li>
+                  <a href="#arcsech">arcsech</a>
+                </li>
+                <li>
+                  <a href="#arccsch">arccsch</a>
+                </li>
+                <li>
+                  <a href="#arccoth">arccoth</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">transc3</span></h1><hr/><p>
+    This CD holds the definitions of many transcendental and related
+    functions. They are defined as multi-valued functions with precise
+    reductions to logs in the case of inverse functions. Note that we use
+    the same names as in the single-valued case, even though it would be
+    traditional to render them with capital letters. In sum
+    &lt;OMS cd="transc3" name="ln"/&gt; is multi-valued, while
+    &lt;OMS cd="transc1" name="ln"/&gt; is single-valued. 
+    Note that in many cases A+S only states the log restrictions under some
+    circumstances: JHD has proved (22.8.2002) all the inverse trig. ones
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/transc3.ocd">http://www.openmath.org/cd/transc3.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>experimental</dd><dt>Version</dt><dd>2.1</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="log"/><b class="om-name">log</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a binary log function; the first argument is the base, to which the second argument is log'ed. It is defined in Abramowitz and Stegun, Handbook of Mathematical Functions, section 4.1<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+  a^b = c is equivalent to b in Log_a c 
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>b</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><msup><mi>a</mi><mi>b</mi></msup><mo>=</mo><mi>c</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+log 100 to base 10 (which is {2+2n\pi i}).
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mn>10</mn><mo>,</mo><mn>100</mn><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="ln"/><b class="om-name">ln</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the ln function (natural logarithm) as a multivalued function.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Ln(x) &lt;=&gt; exp(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Ln(x) &lt;=&gt; exp(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mn> 2 </mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>|</mo><mrow><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+Ln 1 (which is 0+2n\pi i).
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arcsin"/><b class="om-name">arcsin</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the arcsin function. This is the multi-valued inverse of the sin function as described in Abramowitz and Stegun, section 4.4. It takes one argument.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arcsin(x) &lt;=&gt; sin(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-heading"><div class="panel-title">
+          Comment: 
+Only stated in A+S for \z^2|\le 1, but proved for all z in JHD's OpenMath
+deliverable.
+</div></div></div>
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+arcsin(z) = -i ln (sqrt(1-z^2)+iz), but the multivalued equivalent is
+Arcsin(z) = -i Ln (Sqrt(1-z^2)+iz), which we translate into OpenMath as 
+Arcsin(z) = -i [ Ln (sqrt(1-z^2)+iz) union  Ln (-sqrt(1-z^2)+iz)], 
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mo>-</mo><mi>i</mi></mrow><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>z</mi><mn> 2 </mn></msup></mrow></msqrt><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>-</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>z</mi><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arccos"/><b class="om-name">arccos</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the arccos function. This is the multivalued inverse of the cos function.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arccos(x) &lt;=&gt; cos(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccos</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-heading"><div class="panel-title">
+          Comment: 
+Only stated in A+S for \z^2|\le 1, but proved for all z in JHD's OpenMath
+deliverable.
+</div></div></div>
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+arccos(z) = -i ln(z+i \sqrt(1-z^2)), so the multi-valued equivalent is
+Arccos(z) = -i Ln(z+i \Sqrt(1-z^2)), encoded as
+Arccos(z) = -i(ln(z+i \sqrt(1-z^2)) union ln(z-i \sqrt(1-z^2)))
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccos</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mo>-</mo><mi>i</mi></mrow><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>z</mi><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>+</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>z</mi><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>-</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arctan"/><b class="om-name">arctan</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the arctan function. This is the multi-valued inverse of the tan function.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arctan(x) &lt;=&gt; tan(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+arctan(z) = (i/2)ln((1-iz)/(1+iz)),
+so the multi-valued equivalent is
+Arctan(z) = (i/2)Ln((1-iz)/(1+iz)),
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>⁢</mo><mfrac><mi>i</mi><mn> 2 </mn></mfrac></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mfrac><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arcsec"/><b class="om-name">arcsec</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the multivalued arcsec function as the inverse of sec.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arcsec(x) &lt;=&gt; sec(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arcsec</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>sec</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  
+arcsec(z) = -i ln(1/z+i \sqrt(1-1/z^2)), so the multi-valued equivalent is
+Arcsec(z) = -i Ln(1/z+i \Sqrt(1-1/z^2)), encoded as
+Arcsec(z) = -i(ln(1/z+i \sqrt(1-1/z^2)) union ln(1/z-i \sqrt(1-1/z^2)))
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arcsec</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mo>-</mo><mi>i</mi></mrow><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>+</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>-</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arccsc"/><b class="om-name">arccsc</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the multivalued arccsc function as the inverse of csc.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arccsc(x) &lt;=&gt; csc(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccsc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>csc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  
+arccsc(z) = -i ln (sqrt(1-1/z^2)+i/z), but the multivalued equivalent is
+Arccsc(z) = -i Ln (Sqrt(1-1/z^2)+i/z), which we translate into OpenMath as 
+Arccsc(z) = -i [ Ln (sqrt(1-1/z^2)+i/z) union  Ln (-sqrt(1-1/z^2)+i/z), 
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccsc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mo>-</mo><mi>i</mi></mrow><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup></mrow></msqrt><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>-</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arccot"/><b class="om-name">arccot</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the multi-valued arccot function as the inverse of cot<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arccot(x) &lt;=&gt; cot(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccot</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>cot</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  arccot(-z) = - arccot(z) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arccot</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mo>-</mo><mi>x</mi></mrow><mo>|</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mi>arccot</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+arccot(z) = (i/2)ln((1+iz)/(1-iz)),
+so the multi-valued equivalent is
+Arccot(z) = (i/2)Ln((1+iz)/(1-iz)),
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccot</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>⁢</mo><mfrac><mi>i</mi><mn> 2 </mn></mfrac></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mrow><mn>1</mn><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mfrac><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arcsinh"/><b class="om-name">arcsinh</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the Arcsinh function as described in Abramowitz and Stegun, section 4.6.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arcsinh(x) &lt;=&gt; sinh(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arcsinh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>sinh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arcsinh z = ln(z +-\sqrt(1+z^2)) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>arcsinh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>z</mi><mo>+</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>z</mi><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>z</mi><mo>-</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>z</mi><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arcsinh(z) = - i * Arcsin(i * z) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arcsinh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mo>-</mo><mi>i</mi></mrow><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math></div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arccosh"/><b class="om-name">arccosh</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the Arccosh function as described in Abramowitz and Stegun, section 4.6.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arccosh(x) &lt;=&gt; cosh(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccosh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>cosh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arccosh z = ln(z +-\sqrt(z^2-1)) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>arccosh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>z</mi><mo>+</mo><msqrt><mrow><msup><mi>z</mi><mn> 2 </mn></msup><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>z</mi><mo>-</mo><msqrt><mrow><msup><mi>z</mi><mn> 2 </mn></msup><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-heading"><div class="panel-title">
+          Comment:  
+  A+S says +/- i ..., but this is irrelevant since Arccos(iz)=-Arccos(iz)
+</div></div></div> 
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arccosh(z) =  i * Arccos(i * z) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arccosh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>arccos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arctanh"/><b class="om-name">arctanh</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the Arctanh function as described in Abramowitz and Stegun, section 4.6.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arctanh(x) &lt;=&gt; tanh(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arctanh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>tanh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arctanh(z) = - i * Arctan(i * z) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arctanh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mo>-</mo><mi>i</mi></mrow><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math></div></div>
+
+
+<div class="panel panel-default"><div class="panel-heading"><div class="panel-title">
+          Comment: 
+  The condition 0\le x^2 &lt; 1 in A+S is not necessary
+  The proof for Arctan is in JHD's OpenMath deliverable
+</div></div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x arctanh(x) = 1/2 * ln((1 + x)/(1 - x))
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arctanh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mfrac><mn> 1 </mn><mn> 2 </mn></mfrac><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>-</mo><mi>z</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math></div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arcsech"/><b class="om-name">arcsech</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the Arcsech function as described in Abramowitz and Stegun, section 4.6.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arcsech(x) &lt;=&gt; sech(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arcsech</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>sech</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arcsech z = ln(1/z +-\sqrt(1/z^2-1)) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>arcsech</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>z</mi></mfrac><mo>+</mo><msqrt><mrow><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>z</mi></mfrac><mo>-</mo><msqrt><mrow><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-default"><div class="panel-heading"><div class="panel-title">
+          Comment:  
+  A+S says +/- i ..., but this is irrelevant since Arcsec(iz)=-Arcsec(iz)
+</div></div></div> 
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arcsech(z) =  i * Arcsec(i * z) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arcsech</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>arcsec</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arccsch"/><b class="om-name">arccsch</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the Arccsch function as described in Abramowitz and Stegun, section 4.6.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arccsch(x) &lt;=&gt; csch(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccsch</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>csch</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arccsch z = ln(1/z +-\sqrt(1+1/z^2)) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>arccsch</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>z</mi></mfrac><mo>+</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>z</mi></mfrac><mo>-</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mfenced><mfrac><mn>1</mn><mi>z</mi></mfrac></mfenced><mn> 2 </mn></msup></mrow></msqrt></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arccsch(z) = i * Arccsc(i * z) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arcsinh</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arccoth"/><b class="om-name">arccoth</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the Arccoth function as described in Abramowitz and Stegun, section 4.6.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+y in Arccoth(x) &lt;=&gt; coth(y)=x  
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>arccoth</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>|</mo><mrow><mrow><mi>coth</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo>}</mo></mrow></mrow>
+  </math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  Arccoth(z) = i * Arccot(i * z) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arccoth</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mo>-</mo><mi>i</mi></mrow><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>arccot</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math></div></div>
+
+
+<div class="panel panel-default"><div class="panel-heading"><div class="panel-title">
+          Comment: 
+  The condition 0\le x^2 &lt; 1 in A+S is not necessary
+  The proof for Arctan is in JHD's OpenMath deliverable
+</div></div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x arccoth(x) = 1/2 * ln((x + 1)/(x - 1))
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arccoth</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mfrac><mn> 1 </mn><mn> 2 </mn></mfrac><mo>⁢</mo><mi>y</mi></mrow><mo>|</mo><mrow><mi>y</mi><mo>∈</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>z</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

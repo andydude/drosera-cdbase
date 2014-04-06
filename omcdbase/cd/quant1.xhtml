@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>quant1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#forall">forall</a>
+                </li>
+                <li>
+                  <a href="#exists">exists</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">quant1</span></h1><hr/><p>
+    This CD holds the definitions of the basic universal ("for all")
+    quantifier and existential ("there exists") quantifier. It is
+    intended to be `compatible' with the MathML elements representing
+    these quantifiers. 
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/quant1.ocd">http://www.openmath.org/cd/quant1.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-05-11</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.1</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="forall"/><b class="om-name">forall</b><span class="om-role pull-right"> a binder</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the universal ("for all") quantifier which takes two arguments. It must be placed within an OMBIND element. The first argument is the bound variables (placed within an OMBVAR element), and the second is an expression.<hr/>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example to represent the statement for all real x, |sin(x)| &lt;= 1
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">R</mi></mrow><mo>⇒</mo><mrow><mrow><mo>|</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow><mo>≤</mo><mn>1.0</mn></mrow></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="exists"/><b class="om-name">exists</b><span class="om-role pull-right"> a binder</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the existential ("there exists") quantifier which takes two arguments. It must be placed within an OMBIND element. The first argument is the bound variables (placed within an OMBVAR element), and the second is an expression.<hr/>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example  which represents the statement that there is no solution
+to x^n+y^n=z^n for n&gt;2, that is:
+it is not true that there exists x,y,z,n | n&gt;2 and x^n+y^n=z^n
+
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mo>¬</mo><mrow><mo>∃</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>n</mi></mrow><mo>.</mo><mrow><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>z</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>n</mi><mo>&gt;</mo><mn> 2 </mn></mrow><mo>∧</mo><mrow><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup></mrow><mo>=</mo><msup><mi>z</mi><mi>n</mi></msup></mrow></mrow></mrow>
+</math></div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>relation1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#eq">eq</a>
+                </li>
+                <li>
+                  <a href="#lt">lt</a>
+                </li>
+                <li>
+                  <a href="#gt">gt</a>
+                </li>
+                <li>
+                  <a href="#neq">neq</a>
+                </li>
+                <li>
+                  <a href="#leq">leq</a>
+                </li>
+                <li>
+                  <a href="#geq">geq</a>
+                </li>
+                <li>
+                  <a href="#approx">approx</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">relation1</span></h1><hr/><p>
+    This CD holds the common arithmetic relations. It is intended
+    to be `compatible' with the appropriate MathML elements.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/relation1.ocd">http://www.openmath.org/cd/relation1.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="eq"/><b class="om-name">eq</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the binary equality function.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+a=b and b=c implies a=c
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>=</mo><mi>c</mi></mrow></mrow><mo>⇒</mo><mrow><mi>a</mi><mo>=</mo><mi>c</mi></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example which represents the statement 1 + 2 = 3.
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mn> 1 </mn><mo>+</mo><mn> 2 </mn></mrow><mo>=</mo><mn> 3 </mn></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="lt"/><b class="om-name">lt</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the binary less than function which returns true if the first argument is less than the second, it returns false otherwise.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+a&lt;b and b&lt;c implies a&lt;c
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>&lt;</mo><mi>c</mi></mrow></mrow><mo>⇒</mo><mrow><mi>a</mi><mo>&lt;</mo><mi>c</mi></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example which represents the statement 1 + 2 &lt; 4
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mo>(</mo><mn> 1 </mn><mo>+</mo><mn> 2 </mn><mo>)</mo></mrow><mo>&lt;</mo><mn> 4 </mn></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="gt"/><b class="om-name">gt</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the binary greater than function which returns true if the first argument is greater than the second, it returns false otherwise.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+a&gt;b and b&gt;c implies a&gt;c
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mrow><mi>a</mi><mo>&gt;</mo><mi>b</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>&gt;</mo><mi>c</mi></mrow></mrow><mo>⇒</mo><mrow><mi>a</mi><mo>&gt;</mo><mi>c</mi></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example which represents the statement 1 + 2 &gt; 2
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mo>(</mo><mn> 1 </mn><mo>+</mo><mn> 2 </mn><mo>)</mo></mrow><mo>&gt;</mo><mn> 2 </mn></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="neq"/><b class="om-name">neq</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the binary inequality function.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  it is not true that a=/b and b=/c implies a=/c </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mo>¬</mo><mrow><mo>(</mo><mrow><mrow><mi>a</mi><mo>≠</mo><mi>b</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>≠</mo><mi>c</mi></mrow></mrow><mo>⇒</mo><mrow><mi>a</mi><mo>≠</mo><mi>c</mi></mrow><mo>)</mo></mrow>
+</math></div></div>
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example which represents the statement 1 + 2 not = 2
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mn> 1 </mn><mo>+</mo><mn> 2 </mn></mrow><mo>≠</mo><mn> 2 </mn></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="leq"/><b class="om-name">leq</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the binary less than or equal to function which returns true if the first argument is less than or equal to the second, it returns false otherwise.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+a&lt;=b and b&lt;=c implies a&lt;=c
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mrow><mi>a</mi><mo>≤</mo><mi>b</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>≤</mo><mi>c</mi></mrow></mrow><mo>⇒</mo><mrow><mi>a</mi><mo>≤</mo><mi>c</mi></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example which represents the statement 1 + 2 &lt;= 4
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mn> 1 </mn><mo>+</mo><mn> 2 </mn></mrow><mo>≤</mo><mn> 4 </mn></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="geq"/><b class="om-name">geq</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the binary greater than or equal to function which returns true if the first argument is greater than or equal to the second, it returns false otherwise.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+a&gt;=b and b&gt;=c implies a&gt;=c
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mrow><mi>a</mi><mo>≥</mo><mi>b</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>≥</mo><mi>c</mi></mrow></mrow><mo>⇒</mo><mrow><mi>a</mi><mo>≥</mo><mi>c</mi></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example which represents the statement 1 + 2 &gt;= 3
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mn> 1 </mn><mo>+</mo><mn> 2 </mn></mrow><mo>≥</mo><mn> 3 </mn></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="approx"/><b class="om-name">approx</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol is used to denote the approximate equality of its two arguments.<hr/>
+
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+\pi is approximately 355/113
+
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mi>π</mi><mo>≈</mo><mfrac><mn> 355 </mn><mn> 113 </mn></mfrac></mrow>
+</math></div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

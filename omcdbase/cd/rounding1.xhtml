@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>rounding1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#ceiling">ceiling</a>
+                </li>
+                <li>
+                  <a href="#floor">floor</a>
+                </li>
+                <li>
+                  <a href="#trunc">trunc</a>
+                </li>
+                <li>
+                  <a href="#round">round</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">rounding1</span></h1><hr/><p> 
+A CD of basic rounding concepts
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/rounding1.ocd">http://www.openmath.org/cd/rounding1.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="ceiling"/><b class="om-name">ceiling</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The round up (to +infinity) operation.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | ceiling(x)-1 &lt; x &lt;= ceiling x </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mrow><mo>(</mo><mrow><mi>ceiling</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mo>&lt;</mo><mi>x</mi></mrow><mo>∧</mo><mrow><mi>x</mi><mo>≤</mo><mrow><mi>ceiling</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="floor"/><b class="om-name">floor</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The round down (to -infinity) operation.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | floor(x) &lt;= x &lt; floor(x)+1 </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mi>x</mi><mo>&lt;</mo><mrow><mo>(</mo><mrow><mi>floor</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mrow><mi>floor</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>≤</mo><mi>x</mi></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="trunc"/><b class="om-name">trunc</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The round to zero operation.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | trunc(x) &lt;= x &lt; trunc(x)+1 (x&gt;0) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><mo>⇒</mo><mrow><mrow><mi>x</mi><mo>&lt;</mo><mrow><mo>(</mo><mrow><mi>trunc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mrow><mi>trunc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>≤</mo><mi>x</mi></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | trunc(x) &gt;= x &gt; trunc(x)-1 (x&lt;0) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mi>x</mi><mo>≤</mo><mn>0</mn></mrow><mo>⇒</mo><mrow><mrow><mi>x</mi><mo>&gt;</mo><mrow><mo>(</mo><mrow><mi>trunc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mrow><mi>trunc</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>≥</mo><mi>x</mi></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="round"/><b class="om-name">round</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The round to nearest operation.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | x &lt;= round(x)+1/2 and x &lt;= round(x)-1/2 </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mi>x</mi><mo>≤</mo><mrow><mrow><mi>round</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>+</mo><mfrac><mn>1</mn><mn> 2 </mn></mfrac></mrow></mrow><mo>∧</mo><mrow><mi>x</mi><mo>≥</mo><mrow><mrow><mi>round</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>-</mo><mfrac><mn>1</mn><mn> 2 </mn></mfrac></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | Also round to even in event of a tie </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mo>¬</mo><mrow><mo>(</mo><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi><mo>)</mo></mrow><mo>∧</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mn> 2 </mn></mrow><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow><mo>⇒</mo><mrow><mfrac><mrow><mi>round</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mn> 2 </mn></mfrac><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow></mrow>
+</math>
+</div></div>
+
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

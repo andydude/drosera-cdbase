@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>complex1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#complex_cartesian">complex_cartesian</a>
+                </li>
+                <li>
+                  <a href="#real">real</a>
+                </li>
+                <li>
+                  <a href="#imaginary">imaginary</a>
+                </li>
+                <li>
+                  <a href="#complex_polar">complex_polar</a>
+                </li>
+                <li>
+                  <a href="#argument">argument</a>
+                </li>
+                <li>
+                  <a href="#conjugate">conjugate</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">complex1</span></h1><hr/><p>
+    This CD is intended to be `compatible' with the MathML view of
+    operations on and constructors for  complex numbers.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/complex1.ocd">http://www.openmath.org/cd/complex1.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="complex_cartesian"/><b class="om-name">complex_cartesian</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a constructor function for complex numbers specified as the Cartesian coordinates of the relevant point on the complex plane. It takes two arguments, the first is a number x to denote the real part and the second a number y to denote the imaginary part of the complex number x + i y. (Where i is the square root of -1.)<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all x,y | complex_cartesian(x,y) = x + iy
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>.</mo><mrow><mrow><mi>x</mi><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="real"/><b class="om-name">real</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This represents the real part of a complex number<hr/>
+
+
+ 
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+ for all x,y | x = real(x+iy)
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>.</mo><mrow><mi>x</mi><mo>=</mo><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="imaginary"/><b class="om-name">imaginary</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This represents the imaginary part of a complex number<hr/>
+
+
+ 
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all x,y | y = imaginary(x+iy)
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>.</mo><mrow><mi>y</mi><mo>=</mo><mrow><mi>imaginary</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="complex_polar"/><b class="om-name">complex_polar</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a constructor function for complex numbers specified as the polar coordinates of the relevant point on the complex plane. It takes two arguments, the first is a nonnegative number r to denote the magnitude and the second a number theta (given in radians) to denote the argument of the complex number r e^(i theta). (i and e are defined as in this CD).<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all r,a | complex_polar(r,a) = r*e^(a*i)
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>r</mi><mo>,</mo><mi>a</mi></mrow><mo>.</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></msup></mrow><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all x,y,r,a |
+(r sin a = y and r cos a = x) implies (complex_polar(r,a) = 
+complex_cartesian(x,y)
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>r</mi><mo>,</mo><mi>a</mi></mrow><mo>.</mo><mrow><mrow><mrow><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mi>y</mi></mrow><mo>∧</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mi>x</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></msup></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>i</mi></mrow></mrow></mrow></mrow></mrow>
+</math></div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | if a is a real number and k is an integer then
+  complex_polar(x,a) = complex_polar(x,a+2*pi*k) </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>∈</mo><mi mathvariant="double-struck">R</mi></mrow><mo>∧</mo><mrow><mi>k</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></msup></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mrow><mn> 2 </mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>i</mi></mrow></msup></mrow></mrow></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example:  i = complex_polar(1,pi/2) 
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block"><mrow><mi>i</mi><mo>=</mo><msup><mi>e</mi><mrow><mfrac><mi>π</mi><mn> 2 </mn></mfrac><mo>⁢</mo><mi>i</mi></mrow></msup></mrow></math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="argument"/><b class="om-name">argument</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the unary function which returns the argument of a complex number, viz. the angle which a straight line drawn from the number to zero makes with the Real line (measured anti-clockwise). The argument to the symbol is the complex number whos argument is being taken.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all r,a | argument(complex_polar(r,a)=a) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>r</mi><mo>,</mo><mi>a</mi></mrow><mo>.</mo><mrow><mrow><mi>argument</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></msup></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mi>a</mi></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  the argument of x+i*y = arctan(y/x) (if x is positive) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><mo>⇒</mo><mrow><mrow><mi>argument</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+  the argument of x+i*y = arctan(y,x) (two-argument arctan from transc2)
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>argument</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo>)</mo></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="conjugate"/><b class="om-name">conjugate</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">A unary operator representing the complex conjugate of its argument.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+ if a is a complex number then (conjugate(a) + a) is a real number
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>a</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>⇒</mo><mrow><mrow><mo>(</mo><mover><mi>a</mi><mo>¯</mo></mover><mo>+</mo><mi>a</mi><mo>)</mo></mrow><mo>∈</mo><mi mathvariant="double-struck">R</mi></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

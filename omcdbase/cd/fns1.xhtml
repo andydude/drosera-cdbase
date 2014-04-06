@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>fns1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#domainofapplication">domainofapplication</a>
+                </li>
+                <li>
+                  <a href="#domain">domain</a>
+                </li>
+                <li>
+                  <a href="#range">range</a>
+                </li>
+                <li>
+                  <a href="#image">image</a>
+                </li>
+                <li>
+                  <a href="#identity">identity</a>
+                </li>
+                <li>
+                  <a href="#left_inverse">left_inverse</a>
+                </li>
+                <li>
+                  <a href="#right_inverse">right_inverse</a>
+                </li>
+                <li>
+                  <a href="#inverse">inverse</a>
+                </li>
+                <li>
+                  <a href="#left_compose">left_compose</a>
+                </li>
+                <li>
+                  <a href="#lambda">lambda</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">fns1</span></h1><hr/><p>
+    This CD is intended to be `compatible' with the corresponding
+    elements in Content MathML.
+
+    In this CD we give a set of functions concerning functions
+    themselves. Functions can be constructed from expressions via a
+    lambda expression. Also there are basic function functions like
+    compose, etc.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/fns1.ocd">http://www.openmath.org/cd/fns1.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="domainofapplication"/><b class="om-name">domainofapplication</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The domainofapplication element denotes the domain over which a given function is being applied. It is intended in MathML to be a more general alternative to specification of this domain using such quantifier elements as bvar, lowlimit or condition.<hr/>
+
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="domain"/><b class="om-name">domain</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes the domain of a given function, which is the set of values it is defined over.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+x is in the domain of f if and only if 
+there exists a y in the range of f and f(x) = y
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>x</mi><mo>∈</mo><mrow><mi>domain</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></mrow><mo>≡</mo><mrow><mo>∃</mo><mo> </mo><mrow><mi>y</mi></mrow><mo>.</mo><mrow><mrow><mi>y</mi><mo>∈</mo><mrow><mi>range</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></mrow><mo>∧</mo><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>y</mi></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="range"/><b class="om-name">range</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes the range of a function, that is a set that the function will map to. The single argument should be the function whos range is being queried. It should be noted that this is not necessarily equal to the image, it is merely required to contain the image.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+the range of f is a subset of the image of f
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>range</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow><mo>⊂</mo><mrow><mi>image</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></mrow>
+</math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="image"/><b class="om-name">image</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes the image of a given function, which is the set of values the domain of the given function maps to.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  x in the domain of f implies f(x) is in the image f </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>x</mi><mo>∈</mo><mrow><mi>domain</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>∈</mo><mrow><mi>image</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="identity"/><b class="om-name">identity</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The identity function, it takes one argument and returns the same value.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all x | identity(x)=x </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mi>Id</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="left_inverse"/><b class="om-name">left_inverse</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol is used to describe the left inverse of its argument (a function). This inverse may only be partially defined because the function may not have been surjective. If the function is not surjective the left inverse function is ill-defined without further stipulations. No other assumptions are made on the semantics of this left inverse.<hr/>
+
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="right_inverse"/><b class="om-name">right_inverse</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol is used to describe the right inverse of its argument (a function). This inverse may only be partially defined because the function may not have been surjective. If the function is not surjective the right inverse function is ill-defined without further stipulations. No other assumptions are made on the semantics of this right inverse.<hr/>
+
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="inverse"/><b class="om-name">inverse</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol is used to describe the inverse of its argument (a function). This inverse may only be partially defined because the function may not have been surjective. If the function is not surjective the inverse function is ill-defined without further stipulations. No assumptions are made on the semantics of this inverse.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  
+(inverse(f))(f(x)) = x if f is injective,
+that is
+(for all x,y | f(x) = f(y) implies x=y) implies (inverse(f))(f(z)) = z
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mo>∀</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow></mrow><mo>⇒</mo><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow></mrow></mrow><mo>⇒</mo><mrow><mrow><mrow><mo>(</mo><msup><mi>f</mi><mn>-1</mn></msup><mo>)</mo></mrow><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mi>z</mi></mrow></mrow>
+</math>
+</div></div>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+f(inverse(f(y))=y if f is defined at inverse(f)(y)
+that is, 
+if there exists an x s.t. inverse(f)(y) = x then this implies
+f(inverse(f)(y)) = y
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mo>∃</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mrow><mo>(</mo><msup><mi>f</mi><mn>-1</mn></msup><mo>)</mo></mrow><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><msup><mi>f</mi><mn>-1</mn></msup><mo>)</mo></mrow><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mi>y</mi></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="left_compose"/><b class="om-name">left_compose</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the function which forms the left-composition of its two (function) arguments.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  for all f,g,x | left_compose(f,g)(x) = f(g(x)) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>,</mo><mi>x</mi></mrow><mo>.</mo><mrow><mrow><mrow><mo>(</mo><mrow><mi>f</mi><mo>o</mo><mi>g</mi></mrow><mo>)</mo></mrow><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>g</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="lambda"/><b class="om-name">lambda</b><span class="om-role pull-right"> a binder</span><span class="clearfix"/></span></div><div class="panel-body">This symbol is used to represent anonymous functions as lambda expansions. It is used in a binder that takes two further arguments, the first of which is a list of variables, and the second of which is an expression, and it forms the function which is the lambda extraction of the expression<hr/>
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+An example to show the connection between curried and uncurried
+applications of a binary function f 
+(lambda(x,y).(f))(a,b)= (lambda(x).((lambda(y).(f))(b)))(a)
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mo>λ</mo><mo> </mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>.</mo><mi>f</mi></mrow><mo>=</mo><mrow><mo>λ</mo><mo> </mo><mrow><mi>x</mi></mrow><mo>.</mo><mrow><mo>λ</mo><mo> </mo><mrow><mi>y</mi></mrow><mo>.</mo><mi>f</mi></mrow></mrow></mrow></mrow>
+</math></div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

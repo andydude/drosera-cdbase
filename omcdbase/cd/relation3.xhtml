@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>relation3</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#is_relation">is_relation</a>
+                </li>
+                <li>
+                  <a href="#equivalence_closure">equivalence_closure</a>
+                </li>
+                <li>
+                  <a href="#transitive_closure">transitive_closure</a>
+                </li>
+                <li>
+                  <a href="#reflexive_closure">reflexive_closure</a>
+                </li>
+                <li>
+                  <a href="#symmetric_closure">symmetric_closure</a>
+                </li>
+                <li>
+                  <a href="#is_transitive">is_transitive</a>
+                </li>
+                <li>
+                  <a href="#is_reflexive">is_reflexive</a>
+                </li>
+                <li>
+                  <a href="#is_symmetric">is_symmetric</a>
+                </li>
+                <li>
+                  <a href="#is_equivalence">is_equivalence</a>
+                </li>
+                <li>
+                  <a href="#class">class</a>
+                </li>
+                <li>
+                  <a href="#classes">classes</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">relation3</span></h1><hr/><p>
+    This CD holds the basic equivalence relation notions. 
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/relation3.ocd">http://www.openmath.org/cd/relation3.ocd</a></dd><dt>Base</dt><dd><a href=""/></dd><dt>Date</dt><dd>2001-03-12</dd><dt>ReviewDate</dt><dd>2003-04-01</dd><dt>Status</dt><dd>official</dd><dt>CDUses</dt><dd>arith1 logic1 nums1 set1 relation1</dd><dt>Version</dt><dd>2.0</dd></dl></div>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="is_relation"/><b class="om-name">is_relation</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol is a boolean function of two arguments, S and R. The first argument should be a set. When applied to S and R, the function returns true if and only if the second argument is a subset of the Cartesian product of S with itself.<hr/>
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+R a subset of S x S if and only if is_relation (S,R).
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>R</mi><mo>⊂</mo><mrow><mi>S</mi></mrow></mrow><mo>≡</mo><mrow><mi>is_relation</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow></mrow>
+</math></div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="equivalence_closure"/><b class="om-name">equivalence_closure</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a binary function whose first argument is a set S, whose second argument is a relation R on S. When applied to S and R, it represents the smallest equivalence relation (with respect to inclusion) on S containing R.<hr/>
+
+
+
+</div></div>
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="transitive_closure"/><b class="om-name">transitive_closure</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a binary function whose first argument is a set S, whose second argument is a relation R on S. When applied to S and R, it represents the smallest transitive relation (with respect to inclusion) on S containing R.<hr/>
+
+
+
+</div></div>
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="reflexive_closure"/><b class="om-name">reflexive_closure</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a binary function whose first argument is a set S, whose second argument is a relation R on S. When applied to S and R, it represents the smallest reflexive relation (with respect to inclusion) on S containing R.<hr/>
+
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="symmetric_closure"/><b class="om-name">symmetric_closure</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a binary function whose first argument is a set S, whose second argument is a relation R on S. When applied to S and R, it represents the smallest symmetric relation (with respect to inclusion) on S containing R.<hr/>
+
+
+</div></div>
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="is_transitive"/><b class="om-name">is_transitive</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the boolean binary function which returns true if and only if the second argument is a transitive relation on the first.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+R is transitive on S if and only if, for all a,b,c in S with
+(a,b) in R and (b,c) in R, wehave (a,c) in R.
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>is_transitive</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>≡</mo><mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>∈</mo><mi>S</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>∈</mo><mi>S</mi></mrow><mo>∧</mo><mrow><mi>c</mi><mo>∈</mo><mi>S</mi></mrow><mo>∧</mo><mrow><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow><mo>∈</mo><mi>R</mi></mrow><mo>∧</mo><mrow><mrow><mo>(</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo>)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>c</mi><mo>)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></mrow></mrow></mrow>
+</math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="is_reflexive"/><b class="om-name">is_reflexive</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the boolean binary function which returns true if and only if the second argument is a reflexive relation on the first.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+is_reflexive(S,R) if and only if, for all, a in S, we have (a,a) in R.
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>is_reflexive</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>≡</mo><mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi></mrow><mo>.</mo><mrow><mrow><mi>a</mi><mo>∈</mo><mi>S</mi></mrow><mo>⇒</mo><mrow><mo>{</mo><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>a</mi><mo>)</mo></mrow><mo separator="true">,</mo><mi>R</mi><mo>}</mo></mrow></mrow></mrow></mrow>
+</math></div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="is_symmetric"/><b class="om-name">is_symmetric</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the boolean binary function which returns true if and only if the second argument is a symmetric relation on the first.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  is_symmetric(S,R) if and only if, for all a, b in S with (a,b) in R,
+we have (b,a) in R. </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>is_symmetric</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>≡</mo><mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>∈</mo><mi>S</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>∈</mo><mi>S</mi></mrow><mo>∧</mo><mrow><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mo>(</mo><mi>b</mi><mo separator="true">,</mo><mi>a</mi><mo>)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></mrow></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="is_equivalence"/><b class="om-name">is_equivalence</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the boolean binary function which returns true if and only if the second argument is a symmetric relation on the first.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+R is an equivalence relation on S if and only if R is a symmetric, reflexive,
+transitive relation on S.
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>is_symmetric</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>≡</mo><mrow><mo>(</mo><mrow><mi>is_relation</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mi>is_symmetric</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mi>is_reflexive</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>∧</mo><mrow><mi>is_transitive</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="class"/><b class="om-name">class</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a ternary function whose first argument is a set S, whose second argument is a relation R on S, and whose third argument is an element a of S. When applied to S, R, and a, it represents the set of all elements in S related to a by R, that is, the set {b in S | (a,b) in R}.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+class(S,R,a) = {b in S | (a,b) in R}.
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>class</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>,</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>b</mi><mo>∈</mo><mi>S</mi></mrow><mo>|</mo><mrow><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow><mo>∈</mo><mi>R</mi></mrow><mo>}</mo></mrow></mrow>
+</math></div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="classes"/><b class="om-name">classes</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a binary function whose first argument is a set S, whose second argument is a relation R on S. When applied to S and R, it represents the set of all elements in S of the form class(S,R,a) for a in S.<hr/>
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+The classes of an equivalence relation R on S partition S.
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>is_equivalence</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>⇒</mo><mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow><mo>∈</mo><mrow><mi>S</mi><mo>×</mo><mi>S</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mo>(</mo><mrow><mrow><mi>class</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>,</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>∩</mo><mrow><mi>class</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mi>∅</mi><mo>)</mo></mrow><mo>∨</mo><mrow><mo>(</mo><mrow><mi>class</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>,</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>class</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow>
+</math></div></div>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+The classes of a reflexive relation R on S cover S, as a in S belongs to class(S,R,a).
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>is_reflexive</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>)</mo></mrow></mrow><mo>⇒</mo><mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi></mrow><mo>.</mo><mrow><mrow><mi>a</mi><mo>∈</mo><mi>S</mi></mrow><mo>⇒</mo><mrow><mi>a</mi><mo>∈</mo><mrow><mi>class</mi><mo>⁡</mo><mrow><mo>(</mo><mi>S</mi><mo>,</mo><mi>R</mi><mo>,</mo><mi>a</mi><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow>
+</math></div></div>
+
+
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

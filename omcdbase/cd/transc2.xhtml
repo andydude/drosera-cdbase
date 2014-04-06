@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>transc2</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#arctan">arctan</a>
+                </li>
+                <li>
+                  <a href="#unwind">unwind</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">transc2</span></h1><hr/><p> 
+    This CD holds the definition of a two-argument version of arctan,
+    useful for defining the argument of a complex number, and equivalent
+    to Fortran's ATAN2 function.
+    It also holds a definition of the unwinding number, useful for writing
+    correct relationships between elementary functions.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/transc2.ocd">http://www.openmath.org/cd/transc2.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>experimental</dd><dt>Version</dt><dd>2.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="arctan"/><b class="om-name">arctan</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents the two-argument arctan function as in Fortran's ATAN2. arctan(x,y) is a value of arctan(y/x). For real x,y arctan(x,y) is positive when y is positive, negative when y is negative. If y is zero, the result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the result has absolute value $\pi/2$.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+x not 0 implies tan(arctan(y,x))=y/x
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow><mo>⇒</mo><mrow><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+$x,y \in {\bf R} \implies -\pi &lt; arctan(y,x)\le\pi$.
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="double-struck">R</mi></mrow><mo>∧</mo><mrow><mi>y</mi><mo>∈</mo><mi mathvariant="double-struck">R</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>∈</mo><mrow><mo>(</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo separator="true">,</mo><mi>π</mi><mo>]</mo></mrow></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+$Re(y)&gt;0 \implies Re(arctan(y,x))&gt;0$.
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo>⇒</mo><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+$Re(y) &lt; 0 \implies Re(arctan(y,x)) &lt; 0$.
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo>⇒</mo><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+$Re(y)=0 and Re(x)&gt;0 \implies Re(arctan(y,x))=0$.
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>∧</mo><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+$Re(y)=0 and Re(x) &lt; 0 \implies Re(arctan(y,x))=\pi$.
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>∧</mo><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>real</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>&lt;</mo><mi>π</mi></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+$x=0 \implies |arctan(y,x)|=\pi$.
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+  <mrow><mrow><mi>x</mi></mrow><mo>⇒</mo><mrow><mrow><mo>|</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow><mo>=</mo><mfrac><mi>π</mi><mn> 2 </mn></mfrac></mrow></mrow>
+</math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="unwind"/><b class="om-name">unwind</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The unwinding number denotes the extent to which $z=\ln\exp z$ is not true. It was orignally defined in Corless,R.M. &amp; Jeffrey,D.J., The Unwinding Number. SIGSAM Bulletin 30(1996) 2, pp. 28-35. However, we take the definition (which has a change of sign) from Corless,R.M., Davenport,J.H., Jeffrey,D.J. &amp; Watt,S.M., According to Abramowitz and Stegun. SIGSAM Bulletin 34(2000) 2, pp. 58--65. Note that the symbol is normally denoted by ${\cal K}$.<hr/>
+
+
+ 
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  unwind(z)=(z-ln exp z)/(2pi i) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>unwind</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>z</mi><mo>-</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mn> 2 </mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow></mfrac></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  unwind(z)=ceiling((Im z - pi)/(2pi)) </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>unwind</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>ceiling</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mrow><mi>imaginary</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>-</mo><mi>π</mi></mrow><mrow><mn> 2 </mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow>
+</math>
+</div></div>
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  z in C implies unwind(z) in Z </div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>z</mi><mo>∈</mo><mi mathvariant="double-struck">C</mi></mrow><mo>⇒</mo><mrow><mrow><mi>unwind</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow>
+</math>
+</div></div>
+
+<div class="panel panel-default"><div class="panel-heading"><div class="panel-title">
+          Comment: 
+    \arcsin z = \arctan\frac z{\sqrt{1-z^2}} +\pi\K(-\ln(1+z))-\pi\K(-\ln(1-z)).
+</div></div></div>
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi>z</mi><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>z</mi><mn> 2 </mn></msup></mrow></msqrt></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>unwind</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>-</mo><mrow><mi>unwind</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>-</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mi>z</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+</math></div></div>
+
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

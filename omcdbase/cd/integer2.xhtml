@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>integer2</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#modulo_relation">modulo_relation</a>
+                </li>
+                <li>
+                  <a href="#divides">divides</a>
+                </li>
+                <li>
+                  <a href="#eqmod">eqmod</a>
+                </li>
+                <li>
+                  <a href="#neqmod">neqmod</a>
+                </li>
+                <li>
+                  <a href="#class">class</a>
+                </li>
+                <li>
+                  <a href="#euler">euler</a>
+                </li>
+                <li>
+                  <a href="#ord">ord</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">integer2</span></h1><hr/><p>
+    This CD holds a collection of basic modular arithmetic for integers.
+
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/modint.ocd">http://www.openmath.org/cd/modint.ocd</a></dd><dt>Base</dt><dd><a href=""/></dd><dt>Date</dt><dd>2004-07-11</dd><dt>ReviewDate</dt><dd>2006-07-11</dd><dt>Status</dt><dd>experimental</dd><dt>CDUses</dt><dd>alg1 arith1 logic1 quant1 set1 setname1 setname2 relation1 fns1 interval1 integer1</dd><dt>Version</dt><dd>0.0</dd></dl></div>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="modulo_relation"/><b class="om-name">modulo_relation</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a univariate function, whose argument should be an integer. When applied to an integer m, it denotes the equivalence relation of being equal modulo m on Z.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="divides"/><b class="om-name">divides</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a bivariate Boolean function, whose arguments should be integers. When applied to integers a and b, it denotes the property that a divides b.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+For two integers a and b, the number a divides b if and only, in the magma Z
+with multiplication, a is a left divisor of b.
+
+</div></div><div class="panel-body">
+<math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+<mrow><mrow><mi>a</mi><mo>|</mo><mi>b</mi></mrow><mo>≡</mo><mrow><mi>left_divides</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>magma</mi><mo>⁡</mo><mrow><mo>(</mo><mi mathvariant="double-struck">Z</mi><mo>,</mo><mo>×</mo><mo>)</mo></mrow></mrow><mo>,</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow>
+</math>
+</div></div>
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="eqmod"/><b class="om-name">eqmod</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a Boolean valued trivariate function, whose arguments should be integers. When applied to integers a, b, m, it denotes the Boolean evalue of the assertion that a and b are equal modulo m.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="neqmod"/><b class="om-name">neqmod</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a Boolean valued trivariate function, whose arguments should be integers. When applied to integers a, b, m, it denotes the Boolean evalue of the assertion that a and b are not equal modulo m.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="class"/><b class="om-name">class</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol represents a bivariate function, whose arguments should be integers. If a, m are integers, then class(a,m) denotes the residue class a mod m in setname2.Zm.<hr/>
+
+
+</div></div>
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="euler"/><b class="om-name">euler</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes the univariate Euler totient function. If m is an integer, then euler(m) denotes the order of the multiplicative group of invertible elements in the residue class ring Z/mZ.<hr/>
+
+
+</div></div>
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="ord"/><b class="om-name">ord</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol denotes a binary function. Its first argument shoud be a prime number p, the second an integer n. When applied to p and n, it represents the highest power of p occurring in a factorization of n.<hr/>
+
+
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+There are two factors 2 in 60:
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block"> 
+<mrow><mi>ord</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>ord</mi><mo>⁡</mo><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mn>60</mn><mo>)</mo></mrow></mrow><mo>,</mo><mn>2</mn><mo>)</mo></mrow></mrow>
+</math></div></div>
+
+</div></div>
+         
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

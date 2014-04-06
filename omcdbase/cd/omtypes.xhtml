@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>omtypes</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#omtype">omtype</a>
+                </li>
+                <li>
+                  <a href="#symtype">symtype</a>
+                </li>
+                <li>
+                  <a href="#integer">integer</a>
+                </li>
+                <li>
+                  <a href="#float">float</a>
+                </li>
+                <li>
+                  <a href="#string">string</a>
+                </li>
+                <li>
+                  <a href="#bytearray">bytearray</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">omtypes</span></h1><hr/><p> 
+    Types for OM
+
+    Declaration of symbols for names of types of OpenMath objects
+    An OpenMath object which uses any of the symbols here defined,
+    has to use them in accordance with their description.
+
+    Initial version: O. Caprotti 
+    </p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/omtypes.ocd">http://www.openmath.org/cd/omtypes.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>experimental</dd><dt>Version</dt><dd>2.0</dd></dl></div>
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+
+    <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="omtype"/><b class="om-name">omtype</b><span class="om-role pull-right"> a constant</span><span class="clearfix"/></span></div><div class="panel-body">The type of symbolic type symtype<hr/>
+        
+
+        
+    </div></div>
+
+
+    <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="symtype"/><b class="om-name">symtype</b><span class="om-role pull-right"> a constant</span><span class="clearfix"/></span></div><div class="panel-body">The type of symbolic types introduced in other CDs<hr/>
+        
+
+        
+    </div></div>
+
+    <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="integer"/><b class="om-name">integer</b><span class="om-role pull-right"> a constant</span><span class="clearfix"/></span></div><div class="panel-body">The type of integers<hr/>
+        
+
+        
+        <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example:  
+	 
+              is well-typed object. 
+        </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+        <mn> 0 </mn></math></div></div>
+    </div></div>
+
+    <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="float"/><b class="om-name">float</b><span class="om-role pull-right"> a constant</span><span class="clearfix"/></span></div><div class="panel-body">The type of floating point numbers<hr/>
+        
+
+        
+        <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+               
+              is well-typed. 
+        </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block"><mn>1.0</mn>
+              </math></div></div>
+    </div></div>
+
+    <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="string"/><b class="om-name">string</b><span class="om-role pull-right"> a constant</span><span class="clearfix"/></span></div><div class="panel-body">The type of character strings<hr/>
+        
+
+        
+        <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+               
+        </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block"><mtext> hello world </mtext>
+              </math></div></div>
+    </div></div>
+
+    <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="bytearray"/><b class="om-name">bytearray</b><span class="om-role pull-right"> a constant</span><span class="clearfix"/></span></div><div class="panel-body">The type of byte arrays<hr/>
+        
+
+        
+        <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+               
+        </div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">Hkw2Hs3Kd9kjasdk
+              </math></div></div>
+    </div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

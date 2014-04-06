@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>prog1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#assignment">assignment</a>
+                </li>
+                <li>
+                  <a href="#block">block</a>
+                </li>
+                <li>
+                  <a href="#local_var">local_var</a>
+                </li>
+                <li>
+                  <a href="#global_var">global_var</a>
+                </li>
+                <li>
+                  <a href="#return">return</a>
+                </li>
+                <li>
+                  <a href="#for">for</a>
+                </li>
+                <li>
+                  <a href="#while">while</a>
+                </li>
+                <li>
+                  <a href="#if">if</a>
+                </li>
+                <li>
+                  <a href="#call_arguments">call_arguments</a>
+                </li>
+                <li>
+                  <a href="#def_arguments">def_arguments</a>
+                </li>
+                <li>
+                  <a href="#function_block">function_block</a>
+                </li>
+                <li>
+                  <a href="#function_definition">function_definition</a>
+                </li>
+                <li>
+                  <a href="#function_call">function_call</a>
+                </li>
+                <li>
+                  <a href="#procedure_definition">procedure_definition</a>
+                </li>
+                <li>
+                  <a href="#procedure_call">procedure_call</a>
+                </li>
+                <li>
+                  <a href="#procedure_block">procedure_block</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">prog1</span></h1><hr/><p>
+A CD for basic algorithmic concepts. We define the minimal machinery to write 
+small programs in OpenMath encoding.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="/prog1">/prog1</a></dd><dt>Base</dt><dd><a href=""/></dd><dt>Date</dt><dd>2001-02-16</dd><dt>ReviewDate</dt><dd>2001-06-01</dd><dt>Status</dt><dd>experimental</dd><dt>CDUses</dt><dd>arith1 quant1 relation1</dd><dt>Version</dt><dd>0.0</dd></dl></div>
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="assignment"/><b class="om-name">assignment</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol is used to assign values to variables. The syntax is assignment(variable, value), where variable is the encoding of an OpenMath variable (OMV) and value is an OpenMath object.<hr/>
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example:  The assignment a := 125 is encoded as
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+ <mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mn> 125 </mn><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="block"/><b class="om-name">block</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol is meant to represent an arbitray block of code. A block of code can be empty. The syntax is block(obj1, obj2,...,objN), where obji is the OpenMath encoding of the ith sentence (or action) inside the body.<hr/>
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example:  The following block of code
+{
+ a := 153;
+ a := a+1;
+}
+is encoded as
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+ <mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mn> 153 </mn><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mrow><mi>a</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="local_var"/><b class="om-name">local_var</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol can be used to declare local variables.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="global_var"/><b class="om-name">global_var</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol can be used to declare global variables as know to function.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="return"/><b class="om-name">return</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol can be used to return values from fuctions.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="for"/><b class="om-name">for</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol can be used to encode the for loop. The syntax is for(block1,conditional_block,block3,block4), where block1 is the inicialization block, conditional_block is the conditional block that determines the end of the loop, block3 is the incremental block and block4 is the body of the for loop. Each of this blocks should be present (althougth they can be empty).<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="while"/><b class="om-name">while</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">The symbol the while loop. The syntax is while(conditional_block, block1), where conditional_block is the block that determines when to stop the while loop and block1 is the body of the while loop.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="if"/><b class="om-name">if</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">The symbol can be used to encode the if, then, else construct. The syntax is if(conditional_block,block1,block2), where the conditional_block is the block that determines wich of the block of codes block1 and block2 is going to be executed, block1 is the then block and block2 if the else block. The conditional_block and block1 are required but block2 is optional.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="call_arguments"/><b class="om-name">call_arguments</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol can be used to encode the arguments that will be pased to a function or procedure.<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="def_arguments"/><b class="om-name">def_arguments</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol can be used to encode the arguments that a function or procedure can receive.<hr/>
+
+
+</div></div>
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="function_block"/><b class="om-name">function_block</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">The block of code defining the body of the function. The syntax is function_block(local_var,block1), where local_var encodes the local variables (private to the function body) and block1 is the body of the function. Both locar_var and block1 should be present (and of course both can be also empty).<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="function_definition"/><b class="om-name">function_definition</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">The symbol function_definition can be is used to define a function. The syntax is function_definition(name, def_arguments, function_block), where name is the encoding of an OpenMath variable (OMV) representing the name of the funtion, def_arguments is the enconding of the arguments that the function receives and function_block is the body of the function (local variables declarations + body of the function). Functions are completely unaware of the rest of the "world" except for the information they received from the arguments. Functions are only allowed to return values by means of the return construct.<hr/>
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+The function (in Maple notation), 
+MyFunction:=proc(N) local i, Result; Result := 1; for i from 2 to N do 
+Result := Result + i^10; od; Result; end;, is encoded as
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+ <mrow><mi>function_definition</mi><mo>⁡</mo><mrow><mo>(</mo><mi>MyFunct</mi><mo>,</mo><mrow><mi>def_arguments</mi><mo>⁡</mo><mrow><mo>(</mo><mi>N</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>function_block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>local_var</mi><mo>⁡</mo><mrow><mo>(</mo><mi>i</mi><mo>,</mo><mi>Result</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Result</mi><mo>,</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>for</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>i</mi><mo>,</mo><mn>2</mn><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>≤</mo><mi>N</mi></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>i</mi><mo>,</mo><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Result</mi><mo>,</mo><mrow><msup><mi>i</mi><mn> 10 </mn></msup><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>return</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Result</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example:  The encoding of a function N --&gt; 1+2^3+...+N^3 (uses the while loop) 
+is
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+ <mrow><mi>function_definition</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Prog1AddCubes</mi><mo>,</mo><mrow><mi>def_arguments</mi><mo>⁡</mo><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>function_block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>local_var</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Total</mi><mo>,</mo><mi>i</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>i</mi><mo>,</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Total</mi><mo>,</mo><mn>0</mn><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>while</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>≤</mo><mi>n</mi></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Total</mi><mo>,</mo><mrow><mi>Total</mi><mo>+</mo><msup><mi>i</mi><mn>3</mn></msup></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>assignment</mi><mo>⁡</mo><mrow><mo>(</mo><mi>i</mi><mo>,</mo><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>return</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Total</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example:  The encoding of a function the compute the Nth term of the Fibonacci 
+sequence is 
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+ <mrow><mi>function_definition</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Prog1Fibonacci</mi><mo>,</mo><mrow><mi>def_arguments</mi><mo>⁡</mo><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>function_block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>local_var</mi><mo>⁡</mo><mrow><mo>(</mo><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>if</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mi>n</mi><mo>=</mo><mn>1</mn><mo>)</mo></mrow><mo>∨</mo><mrow><mo>(</mo><mi>n</mi><mo>=</mo><mn>2</mn><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>return</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>block</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>return</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>function_call</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Prog1Fibonacci</mi><mo>,</mo><mrow><mi>call_arguments</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>function_call</mi><mo>⁡</mo><mrow><mo>(</mo><mi>Prog1Fibonacci</mi><mo>,</mo><mrow><mi>call_arguments</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="function_call"/><b class="om-name">function_call</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">Symbol function_call can be used to "call" already defined functions. The syntax is function_call(name, call_arguments), where name is the encoding of an OpenMath variable (OMV) representing the name of the function and call_arguments are the arguments to pass to the function. Both, name and call_arguments, should be present but call_arguments can be empty.<hr/>
+
+
+<div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example:  The function call "MyFunction(100)" is encoded as
+
+</div></div><div class="panel-body"><math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+ <mrow><mi>function_call</mi><mo>⁡</mo><mrow><mo>(</mo><mi>MyFunct</mi><mo>,</mo><mrow><mi>call_arguments</mi><mo>⁡</mo><mrow><mo>(</mo><mn>100</mn><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow>
+</math></div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="procedure_definition"/><b class="om-name">procedure_definition</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">This symbol can be used to define a procedure. The sintax is procedure_definition(name, def_arguments, procedure_block), where name is the encoding of an OpenMath variable representing the name of the procedure, def_arguments encodes the argument the procedure can receive and procedure_block encodes the body of the procedure. Contrary to function procedures can have knowledge about global objects by means of the global_var construct (see procedure block).<hr/>
+
+
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="procedure_call"/><b class="om-name">procedure_call</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">Symbol procedure_call can be used to "call" already defined procedures. The syntax is procedure_call(name, call_arguments), where name is the encoding of an OpenMath variable (OMV) representing the name of the function and call_arguments are the arguments to pass to the function. Both, name and call_arguments, should be present but call_arguments can be empty.<hr/>
+
+
+</div></div>
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="procedure_block"/><b class="om-name">procedure_block</b><span class="om-role pull-right"> an </span><span class="clearfix"/></span></div><div class="panel-body">The block of code defining the body of the procedure. The syntax is procedure_block(local_var, global_var, block1), where local_var encodes the local variables (private to the procedure body), gloval_var are global variables that are know to the procedure and block1 is the body of the procedure. All these elements, locar_var, global_var and block1, should be present (but they can also be empty).<hr/>
+
+
+</div></div>
+
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

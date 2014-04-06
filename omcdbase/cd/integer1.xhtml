@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>integer1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#factorof">factorof</a>
+                </li>
+                <li>
+                  <a href="#factorial">factorial</a>
+                </li>
+                <li>
+                  <a href="#quotient">quotient</a>
+                </li>
+                <li>
+                  <a href="#remainder">remainder</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">integer1</span></h1><hr/><p>
+    This CD holds a collection of basic integer functions.
+
+    This CD is intended to be `compatible' with the corresponding elements
+    in Content MathML.
+</p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://www.openmath.org/cd/integer1.ocd">http://www.openmath.org/cd/integer1.ocd</a></dd><dt>Base</dt><dd><a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a></dd><dt>Date</dt><dd>2004-03-30</dd><dt>ReviewDate</dt><dd>2006-03-30</dd><dt>Status</dt><dd>official</dd><dt>Version</dt><dd>3.0</dd></dl></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="factorof"/><b class="om-name">factorof</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">This is the binary OpenMath operator that is used to indicate the mathematical relationship a "is a factor of" b, where a is the first argument and b is the second. This relationship is true if and only if b mod a = 0.<hr/>
+
+
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  b is a factor of a iff remainder of a divided by b = 0 </div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>factorof</mi><mo>⁡</mo><mrow><mo>(</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>remainder</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="factorial"/><b class="om-name">factorial</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol to represent a unary factorial function on non-negative integers.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+factorial n = product [1..n]
+</div></div><div class="panel-body">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+    <mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>=</mo><munderover><mo>∏</mo><mrow><mrow><mi>i</mi></mrow><mo>=</mo><mn> 1 </mn></mrow><mi>n</mi></munderover><mi>i</mi></mrow>
+  </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="quotient"/><b class="om-name">quotient</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol to represent the integer (binary) division operator. That is, for integers a and b, quotient(a,b) denotes q such that a=b*q+r, with |r| less than |b| and a*r positive.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all a,b with a,b Integers |
+  a = b * quotient(a,b) + remainder(a,b) and abs(remainder(a,b)) is less than abs(b) and 
+a*remainder(a,b) &gt;= 0
+</div></div><div class="panel-body">
+   <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+     <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>quotient</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>remainder</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>∧</mo><mrow><mrow><mo>|</mo><mrow><mi>remainder</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mo>|</mo><mi>b</mi><mo>|</mo></mrow></mrow><mo>∧</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>remainder</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></mrow></mrow></mrow>
+   </math>
+</div></div>
+</div></div>
+
+<div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="remainder"/><b class="om-name">remainder</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">The symbol to represent the integer remainder after (binary) division. For integers a and b, remainder(a,b) denotes r such that a=b*q+r, with |r| less than |b| and a*r positive.<hr/>
+
+
+
+
+<div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property: 
+for all a,b with a,b Integers | 
+  a = b * quotient(a,b) + remainder(a,b) and abs(remainder(a,b)) is less than abs(b) and a*remainder(a,b) &gt;= 0
+</div></div><div class="panel-body">
+   <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+     <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mrow><mi>a</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><mo>∧</mo><mrow><mi>b</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow></mrow><mo>⇒</mo><mrow><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>quotient</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>remainder</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>∧</mo><mrow><mrow><mo>|</mo><mrow><mi>remainder</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mo>|</mo><mi>b</mi><mo>|</mo></mrow></mrow><mo>∧</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>remainder</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></mrow></mrow></mrow>
+   </math>
+</div></div>
+</div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>
