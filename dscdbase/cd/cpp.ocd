@@ -1,0 +1,162 @@
+<CD xmlns="http://www.openmath.org/OpenMathCD">
+
+  <CDComment>
+  </CDComment>
+
+  <!-- Required -->
+  <CDName> cpp </CDName>
+  <CDBase> http://drosoft.org/cd </CDBase>
+  <CDURL> http://drosoft.org/cd/cpp.ocd </CDURL>
+  <CDDate> 2013-12-08 </CDDate>
+  <CDVersion> 1 </CDVersion>
+  <CDRevision> 0 </CDRevision>
+  <CDStatus> private </CDStatus>
+
+  <Description>
+    A CD that represents concepts related to the C Preprocessor (CPP).
+
+    Since all other CDs represent concepts at the AST level, this cannot represent the C Preprocessor
+    entirely accurately, since it exists at the lexical/token level, and so the points at which these
+    functions may be used is dramatically reduced by forcing macros to only appear in certain locations.
+  </Description>
+
+  <CDDefinition>
+    <Name> define </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A CPP #define directive.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> defined </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A CPP defined(x) function
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> directive </Name>
+    <Role> [sts3:role] </Role>
+    <Description>
+      A CPP directive.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> else </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A CPP #else directive
+    </Description>
+    <Example>
+      #ifdef MACRO
+        // code A
+      #else
+        // code B
+      #endif
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> elseif </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> endif </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> if </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> ifdef </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> ifndef </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> include </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> line </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> pragma </Name>
+    <Role> [cpp:directive] </Role>
+    <Description>
+      A C Preprocessor
+    </Description>
+  </CDDefinition>
+
+</CD>

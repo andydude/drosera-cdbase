@@ -1,0 +1,100 @@
+<!-- -*- mode: nxml -*- -->
+<CD xmlns="http://www.openmath.org/OpenMathCD">
+
+  <CDComment>
+    LICENSE
+  </CDComment>
+
+  <!-- Required -->
+  <CDName> quant2 </CDName>
+  <CDBase> http://drosoft.org/cd </CDBase>
+  <CDURL> http://drosoft.org/cd/quant2.ocd </CDURL>
+  <CDDate> 2014-05-04 </CDDate>
+  <CDVersion> 1 </CDVersion>
+  <CDRevision> 0 </CDRevision>
+  <CDStatus> private </CDStatus>
+
+  <Description>
+    A CD that represents the uniqueness quantification or unique existential quantification.
+  </Description>
+
+  <CDDefinition>
+    <Name> unique </Name>
+    <Role> binder </Role>
+    <Description>
+      Uniqueness quantification or unique existential quantification.
+      This is usually represented with an reverse ``!E``, ``∃!``.
+    </Description>
+
+    <Example>
+      There exists a unique element 1 in the set of integers.
+      <m:math xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <m:bind>
+          <m:csymbol cd="quant2"> unique </m:csymbol>
+          <m:apply>
+            <m:in/>
+            <m:cn> 1 </m:cn>
+            <m:integers/>
+          </m:apply>
+          <m:apply>
+            <m:eq/>
+            <m:apply>
+              <m:times/>
+              <m:cn> 1 </m:cn>
+              <m:ci> a </m:ci>
+            </m:apply>
+            <m:cn> a </m:cn>
+          </m:apply>
+        </m:bind>
+      </m:math>
+    </Example>
+
+    <CMP>
+      TODO
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath">
+        <OMA>
+          <OMS cd="prog1" name="assignment"/>
+
+          <OMBIND>
+            <OMS cd="quant2" name="unique"/>
+            <OMV name="a"/>
+            <OMA>
+              <OMV name="P"/>
+              <OMV name="a"/>
+            </OMA>
+          </OMBIND>
+
+          <OMBIND>
+            <OMS cd="quant1" name="exists"/>
+            <OMBVAR>
+              <OMV name="a"/>
+            </OMBVAR>
+            <OMBIND>
+              <OMS cd="quant1" name="forall"/>
+              <OMBVAR>
+                <OMV name="b"/>
+              </OMBVAR>
+              <OMA>
+                <OMS cd="logic1" name="equivalent"/>
+                <OMA>
+                  <OMV name="P"/>
+                  <OMV name="b"/>
+                </OMA>
+                <OMA>
+                  <OMS cd="relation1" name="eq"/>
+                  <OMV name="a"/>
+                  <OMV name="b"/>
+                </OMA>
+              </OMA>
+            </OMBIND>
+          </OMBIND>
+
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+  </CDDefinition>
+
+</CD>

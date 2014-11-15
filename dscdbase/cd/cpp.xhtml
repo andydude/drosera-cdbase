@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>cpp</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#define">define</a>
+                </li>
+                <li>
+                  <a href="#defined">defined</a>
+                </li>
+                <li>
+                  <a href="#directive">directive</a>
+                </li>
+                <li>
+                  <a href="#else">else</a>
+                </li>
+                <li>
+                  <a href="#elseif">elseif</a>
+                </li>
+                <li>
+                  <a href="#endif">endif</a>
+                </li>
+                <li>
+                  <a href="#if">if</a>
+                </li>
+                <li>
+                  <a href="#ifdef">ifdef</a>
+                </li>
+                <li>
+                  <a href="#ifndef">ifndef</a>
+                </li>
+                <li>
+                  <a href="#include">include</a>
+                </li>
+                <li>
+                  <a href="#line">line</a>
+                </li>
+                <li>
+                  <a href="#pragma">pragma</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">cpp</span></h1><hr/><p>
+    A CD that represents concepts related to the C Preprocessor (CPP).
+
+    Since all other CDs represent concepts at the AST level, this cannot represent the C Preprocessor
+    entirely accurately, since it exists at the lexical/token level, and so the points at which these
+    functions may be used is dramatically reduced by forcing macros to only appear in certain locations.
+  </p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://drosoft.org/cd/cpp.ocd">http://drosoft.org/cd/cpp.ocd</a></dd><dt>Base</dt><dd><a href="http://drosoft.org/cd">http://drosoft.org/cd</a></dd><dt>Date</dt><dd>2013-12-08</dd><dt>Status</dt><dd>private</dd><dt>Version</dt><dd>1.0</dd></dl></div>
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="define"/><b class="om-name">define</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A CPP #define directive.<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="defined"/><b class="om-name">defined</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A CPP defined(x) function<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="directive"/><b class="om-name">directive</b><span class="om-role pull-right"> a [sts3:role]</span><span class="clearfix"/></span></div><div class="panel-body">A CPP directive.<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="else"/><b class="om-name">else</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A CPP #else directive<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      #ifdef MACRO
+        // code A
+      #else
+        // code B
+      #endif
+    </div></div><div class="panel-body"/></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="elseif"/><b class="om-name">elseif</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="endif"/><b class="om-name">endif</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="if"/><b class="om-name">if</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="ifdef"/><b class="om-name">ifdef</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="ifndef"/><b class="om-name">ifndef</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="include"/><b class="om-name">include</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="line"/><b class="om-name">line</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="pragma"/><b class="om-name">pragma</b><span class="om-role pull-right"> a [cpp:directive]</span><span class="clearfix"/></span></div><div class="panel-body">A C Preprocessor<hr/>
+    
+    
+    
+  </div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

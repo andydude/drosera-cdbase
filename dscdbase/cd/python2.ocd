@@ -1,0 +1,669 @@
+<CD xmlns="http://www.openmath.org/OpenMathCD">
+
+  <CDComment>
+  </CDComment>
+
+  <!-- Required -->
+  <CDName> python2 </CDName>
+  <CDBase> http://drosoft.org/cd </CDBase>
+  <CDURL> http://drosoft.org/cd/python2.ocd </CDURL>
+  <CDDate> 2013-12-08 </CDDate>
+  <CDVersion> 1 </CDVersion>
+  <CDRevision> 0 </CDRevision>
+  <CDStatus> private </CDStatus>
+
+  <Description>
+    A CD that represents concepts of the Python Language, versions 2.0 - 2.7.
+
+    
+  </Description>
+
+  <CDDefinition>
+    <Name> args </Name>
+    <Role> http://drosoft.org/cd/sts4#syntax </Role>
+    <Description>
+      A Python list splat.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> as </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python variable binding, e.g.: in except or with.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> basestring </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> buffer </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> callable </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> class </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> classmethod </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> cmp </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> coerce </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> compare </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> compile </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> def </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> del </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> delattr </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> dict </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> dict_comp </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> dir </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> divide </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> divmod </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> ellipsis </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> enumerate </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> eval </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> exec </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> execfile </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> file </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> format </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> generator </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> getattr </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> globals </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> hasattr </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> hash </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> help </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> hex </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> id </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> import </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> import_from </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> input </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> int </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> intern </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> is </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> isinstance </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> isnot </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> issubclass </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> iter </Name>
+    <Role> application </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> kwargs </Name>
+    <Role> http://drosoft.org/cd/sts4#syntax </Role>
+    <Description>
+      A Python dictionary splat.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> len </Name>
+    <Role> application </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> list </Name>
+    <Role> application </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> list_comp </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> load </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> locals </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> long </Name>
+    <Role> http://drosoft.org/cd/sts4#type_constant </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> memoryview </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> module </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> next </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> object </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> oct </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> open </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> param </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> print </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> property </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> range </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> raw_input </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> reload </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> repr </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> reversed </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> selector </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> set </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> set_comp </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> setattr </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> slice </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> sorted </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> staticmethod </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> store </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> super </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> try_except </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> try_finally </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> tuple </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> type </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> unichr </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> vars </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> xrange </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Python .
+    </Description>
+  </CDDefinition>
+
+</CD>

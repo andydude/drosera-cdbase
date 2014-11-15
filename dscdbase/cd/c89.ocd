@@ -1,0 +1,979 @@
+<CD xmlns="http://www.openmath.org/OpenMathCD">
+
+  <CDComment>
+  </CDComment>
+
+  <!-- Required -->
+  <CDName> java4 </CDName>
+  <CDBase> http://drosoft.org/cd </CDBase>
+  <CDURL> http://drosoft.org/cd/java4.ocd </CDURL>
+  <CDDate> 2013-12-08 </CDDate>
+  <CDVersion> 1 </CDVersion>
+  <CDRevision> 0 </CDRevision>
+  <CDStatus> private </CDStatus>
+
+  <Description>
+    A CD that represents concepts about the C programming language (in 1989).
+  </Description>
+
+  <CDDefinition>
+    <Name> array_n_type </Name>
+    <Role> http://drosoft.org/cd/sts4#type_application </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> array_selector </Name>
+    <Role> application </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> array_type </Name>
+    <Role> http://drosoft.org/cd/sts4#type_application </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> auto </Name>
+    <Role> attribution </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> cast </Name>
+    <Role> application </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> char </Name>
+    <Role> http://drosoft.org/cd/sts4#type_constant </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> const </Name>
+    <Role> http://drosoft.org/cd/sts4#type_constant </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> function_declaration </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> type_definition </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> typedef </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> extern </Name>
+    <Role> http://drosoft.org/cd/sts4#type_constant </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> float </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> static </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> register </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> void </Name>
+    <Role> http://drosoft.org/cd/sts4#type_constant </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> short </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> int </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> long </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> double </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> signed </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> unsigned </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> struct </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> union </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> struct_bit_declarator </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> enum_definition </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> enum_specifier </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> volatile </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> inline </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> pointer </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> ellipsis </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> translation_unit </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> function_definition </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> unsigned_char </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> unsigned_int </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> unsigned_long </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> unsigned_long_long </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name>  </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+</CD>

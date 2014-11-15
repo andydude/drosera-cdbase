@@ -1,3 +1,4 @@
+<!-- -*- mode: nxml -*- -->
 <CD xmlns="http://www.openmath.org/OpenMathCD">
 
   <CDComment>
@@ -45,17 +46,17 @@
           <OMS cd="relation1" name="eq"/>
           <OMA>
             <OMS cd="prog2" name="assignment_operator"/>
-	        <OMV name="a"/>
+            <OMV name="a"/>
             <OMS cd="arith1" name="plus"/>
-	        <OMV name="b"/>
+            <OMV name="b"/>
           </OMA>
           <OMA>
             <OMS cd="prog1" name="assignment"/>
-	        <OMV name="a"/>
+            <OMV name="a"/>
             <OMA>
               <OMS cd="arith1" name="plus"/>
-	          <OMV name="a"/>
-	          <OMV name="b"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
             </OMA>
           </OMA>
         </OMA>
@@ -71,15 +72,15 @@
           <OMS cd="relation1" name="eq"/>
           <OMA>
             <OMS cd="prog2" name="assignment_operator"/>
-	        <OMV name="a"/>
+            <OMV name="a"/>
             <OMS cd="arith1" name="plus"/>
-	        <OMI>1</OMI>
+            <OMI>1</OMI>
           </OMA>
           <OMA>
             <OMS cd="prog2" name="void"/>
             <OMA>
               <OMS cd="prog2" name="post_increment"/>
-	          <OMV name="a"/>
+              <OMV name="a"/>
             </OMA>
           </OMA>
         </OMA>
@@ -95,15 +96,15 @@
           <OMS cd="relation1" name="eq"/>
           <OMA>
             <OMS cd="prog2" name="assignment_operator"/>
-	        <OMV name="a"/>
+            <OMV name="a"/>
             <OMS cd="arith1" name="plus"/>
-	        <OMI>1</OMI>
+            <OMI>1</OMI>
           </OMA>
           <OMA>
             <OMS cd="prog2" name="void"/>
             <OMA>
               <OMS cd="prog2" name="pre_increment"/>
-	          <OMV name="a"/>
+              <OMV name="a"/>
             </OMA>
           </OMA>
         </OMA>

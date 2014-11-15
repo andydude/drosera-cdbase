@@ -1,0 +1,41 @@
+<CD xmlns="http://www.openmath.org/OpenMathCD">
+
+  <CDComment>
+  </CDComment>
+
+  <!-- Required -->
+  <CDName> java4 </CDName>
+  <CDBase> http://drosoft.org/cd </CDBase>
+  <CDURL> http://drosoft.org/cd/java4.ocd </CDURL>
+  <CDDate> 2013-12-08 </CDDate>
+  <CDVersion> 1 </CDVersion>
+  <CDRevision> 0 </CDRevision>
+  <CDStatus> private </CDStatus>
+
+  <Description>
+    A CD that represents concepts of the Java Programming Language, version 1.4.
+
+    
+  </Description>
+
+  <CDDefinition>
+    <Name> class </Name>
+    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Description>
+      A Java class definition.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+</CD>

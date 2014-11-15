@@ -1,0 +1,116 @@
+<!-- -*- mode: nxml -*- -->
+<CD xmlns="http://www.openmath.org/OpenMathCD">
+
+  <CDComment>
+    LICENSE
+  </CDComment>
+
+  <!-- Required -->
+  <CDName> rounding_euc </CDName>
+  <CDBase> http://drosoft.org/cd </CDBase>
+  <CDURL> http://drosoft.org/cd/rounding_euc.ocd </CDURL>
+  <CDDate> 2014-04-06 </CDDate>
+  <CDVersion> 1 </CDVersion>
+  <CDRevision> 0 </CDRevision>
+  <CDStatus> private </CDStatus>
+
+  <Description>
+    A CD that represents concepts about the Euclidean division algorithm.
+  </Description>
+
+  <CDDefinition>
+    <Name> divide </Name>
+    <Role> application </Role>
+    <Description>
+      A Euclidean division.
+      Returns two values: (q, r) where q is the quotient below, and r is the remainder below.
+    </Description>
+
+    <Example>
+    </Example>
+
+    <CMP>
+      Same as applying the functions below.
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="rounding_euc" name="divide"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="linalg2" name="vector"/>
+              <OMA>
+                <OMS cd="rounding_euc" name="quotient"/>
+                <OMV name="a"/>
+                <OMV name="b"/>
+              </OMA>
+              <OMA>
+                <OMS cd="rounding_euc" name="remainder"/>
+                <OMV name="a"/>
+                <OMV name="b"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> quotient </Name>
+    <Role> application </Role>
+    <Description>
+      A Euclidean quotient.
+    </Description>
+    <Example>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> remainder </Name>
+    <Role> application </Role>
+    <Description>
+      A Euclidean remander.
+    </Description>
+
+    <Example>
+    </Example>
+
+    <CMP>
+      The result is always nonnegative (this is unique to EUC remainders).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="geq"/>
+            <OMA>
+              <OMS cd="rounding_euc" name="remainder"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMI>0</OMI>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
+  </CDDefinition>
+
+</CD>

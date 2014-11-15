@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+
+  <!-- OpenMath -->
+  <namespace ns="http://www.openmath.org/OpenMath" typeId="OpenMath"/>
+  <typeId id="OpenMath" uri="../../xml/rnc/openmath2.rnc"/>
+
+  <!-- OpenMath Content Dictionary -->
+  <namespace ns="http://www.openmath.org/OpenMathCD" typeId="OpenMathCD"/>
+  <typeId id="OpenMathCD" uri="../../xml/rnc/omcd2.rnc"/>
+
+  <!-- OpenMath Content Dictionary Signature -->
+  <namespace ns="http://www.openmath.org/OpenMathCDS" typeId="OpenMathCDSig"/>
+  <typeId id="OpenMathCDSig" uri="../../xml/rnc/omcdsig2.rnc"/>
+
+  <!-- OpenMath Content Dictionary Group -->
+  <namespace ns="http://www.openmath.org/OpenMathCDG" typeId="OpenMathCDGroup"/>
+  <typeId id="OpenMathCDGroup" uri="../../xml/rnc/omcdgroup2.rnc"/>
+
+</locatingRules>
