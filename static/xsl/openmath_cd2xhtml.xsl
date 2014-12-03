@@ -16,13 +16,13 @@
   <t:template match="cd:CDVersion"/>
 
   <t:template match="/cd:CD">
-    <html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
+        <meta charset="utf-8"/>
+        <title><t:value-of select="normalize-space(cd:CDName)"/></title>
         <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
-        <style>
-          .jumbotron hr { border-color: #ddd; }
-        </style>
+        <style>.jumbotron hr { border-color: #ddd; }</style>
       </head>
       <body>
 
