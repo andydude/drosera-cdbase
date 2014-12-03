@@ -4,25 +4,155 @@
   </CDComment>
 
   <!-- Required -->
-  <CDName> java4 </CDName>
+  <CDName> bitwise1 </CDName>
   <CDBase> http://drosoft.org/cd </CDBase>
-  <CDURL> http://drosoft.org/cd/java4.ocd </CDURL>
+  <CDURL> http://drosoft.org/cd/bitwise1.ocd </CDURL>
   <CDDate> 2013-12-08 </CDDate>
   <CDVersion> 1 </CDVersion>
   <CDRevision> 0 </CDRevision>
   <CDStatus> private </CDStatus>
 
   <Description>
-    A CD that represents concepts of the Java Programming Language, version 1.4.
-
-    
+    A CD that represents bitwise arithmetic operations on integers. These can be used to represent more specific operations on fixed-width integers, but are intended to be the abstract idealized operation of which fixed-width integer bitwise operations are restrictions. This CD is also supposed to match the idea behind logic1, but is missing two names: true and false. They are missing because false would be 0, and true would be -1, but these are just integers.
   </Description>
 
   <CDDefinition>
-    <Name> class </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Name> and </Name>
+    <Role> application </Role>
     <Description>
-      A Java class definition.
+      Bitwise AND.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> equivalent </Name>
+    <Role> application </Role>
+    <Description>
+      Bitwise EQV.
+    </Description>
+    
+    <Example>
+      (a or b) is equivalent to (b or a).
+      <m:apply xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <m:csymbol cd="bitwise"> equivalent </m:csymbol>
+        <m:ci>x</m:ci>
+      </m:apply>
+    </Example>
+
+    <CMP> (a equivalent b) is equivalent to ((a implies b) and (b implies a)) </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="logic1" name="equivalent"/>
+            <OMA>
+              <OMS cd="bitwise1" name="equivalent"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="bitwise1" name="and"/>
+              <OMA>
+                <OMS cd="bitwise1" name="implies"/>
+	            <OMV name="a"/>
+	            <OMV name="b"/>
+              </OMA>
+              <OMA>
+                <OMS cd="bitwise1" name="implies"/>
+	            <OMV name="b"/>
+	            <OMV name="a"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+    
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> implies </Name>
+    <Role> application </Role>
+    <Description>
+      Bitwise IMPLIES.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> not </Name>
+    <Role> application </Role>
+    <Description>
+      Bitwise NOT, also known as complement.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> or </Name>
+    <Role> application </Role>
+    <Description>
+      Bitwise OR.
+    </Description>
+    <Example>
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
+        <drox:mod>
+          <m:csymbol cd="java4"> public </m:csymbol>
+        </drox:mod>
+        <m:csymbol cd="java4"> class </m:csymbol>
+        <drox:dt>
+          <m:ci>Color</m:ci>
+        </drox:dt>
+      </drox:dl>
+    </Example>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> xor </Name>
+    <Role> application </Role>
+    <Description>
+      Bitwise XOR.
     </Description>
     <Example>
       <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" 

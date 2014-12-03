@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>bitwise1</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#and">and</a>
+                </li>
+                <li>
+                  <a href="#equivalent">equivalent</a>
+                </li>
+                <li>
+                  <a href="#implies">implies</a>
+                </li>
+                <li>
+                  <a href="#not">not</a>
+                </li>
+                <li>
+                  <a href="#or">or</a>
+                </li>
+                <li>
+                  <a href="#xor">xor</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">bitwise1</span></h1><hr/><p>
+    A CD that represents bitwise arithmetic operations on integers. These can be used to represent more specific operations on fixed-width integers, but are intended to be the abstract idealized operation of which fixed-width integer bitwise operations are restrictions. This CD is also supposed to match the idea behind logic1, but is missing two names: true and false. They are missing because false would be 0, and true would be -1, but these are just integers.
+  </p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://drosoft.org/cd/bitwise1.ocd">http://drosoft.org/cd/bitwise1.ocd</a></dd><dt>Base</dt><dd><a href="http://drosoft.org/cd">http://drosoft.org/cd</a></dd><dt>Date</dt><dd>2013-12-08</dd><dt>Status</dt><dd>private</dd><dt>Version</dt><dd>1.0</dd></dl></div>
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="and"/><b class="om-name">and</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">Bitwise AND.<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="equivalent"/><b class="om-name">equivalent</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">Bitwise EQV.<hr/>
+    
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      (a or b) is equivalent to (b or a).
+      
+    </div></div><div class="panel-body">
+         equivalent 
+        x
+      </div></div>
+
+    
+    <div class="panel panel-info"><div class="panel-heading"><div class="panel-title">
+          Property:  (a equivalent b) is equivalent to ((a implies b) and (b implies a)) </div></div><div class="panel-body">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:om="http://www.openmath.org/OpenMath" display="block">
+        <mrow><mo>∀</mo><mo> </mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>.</mo><mrow><mrow><mi>equivalent</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>≡</mo><mrow><mi>and</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>implies</mi><mo>⁡</mo><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mi>implies</mi><mo>⁡</mo><mrow><mo>(</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow>
+      </math>
+    </div></div>
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="implies"/><b class="om-name">implies</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">Bitwise IMPLIES.<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="not"/><b class="om-name">not</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">Bitwise NOT, also known as complement.<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="or"/><b class="om-name">or</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">Bitwise OR.<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="xor"/><b class="om-name">xor</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">Bitwise XOR.<hr/>
+    
+    
+    
+    <div class="panel panel-success"><div class="panel-heading"><div class="panel-title">
+          Example: 
+      
+    </div></div><div class="panel-body">
+        
+           public 
+        
+         class 
+        
+          Color
+        
+      </div></div>
+  </div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

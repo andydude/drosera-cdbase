@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cd="http://www.openmath.org/OpenMathCD">
+  <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css"/>
+    <style>
+          .jumbotron hr { border-color: #ddd; }
+        </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a class="navbar-brand" href=""><abbr title="OpenMath Content Dictionary">OMCD</abbr>: <strong>python2</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Definitions <b class="caret"/></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#args">args</a>
+                </li>
+                <li>
+                  <a href="#as">as</a>
+                </li>
+                <li>
+                  <a href="#basestring">basestring</a>
+                </li>
+                <li>
+                  <a href="#buffer">buffer</a>
+                </li>
+                <li>
+                  <a href="#callable">callable</a>
+                </li>
+                <li>
+                  <a href="#class">class</a>
+                </li>
+                <li>
+                  <a href="#classmethod">classmethod</a>
+                </li>
+                <li>
+                  <a href="#cmp">cmp</a>
+                </li>
+                <li>
+                  <a href="#coerce">coerce</a>
+                </li>
+                <li>
+                  <a href="#compare">compare</a>
+                </li>
+                <li>
+                  <a href="#compile">compile</a>
+                </li>
+                <li>
+                  <a href="#def">def</a>
+                </li>
+                <li>
+                  <a href="#del">del</a>
+                </li>
+                <li>
+                  <a href="#delattr">delattr</a>
+                </li>
+                <li>
+                  <a href="#dict">dict</a>
+                </li>
+                <li>
+                  <a href="#dict_comp">dict_comp</a>
+                </li>
+                <li>
+                  <a href="#dir">dir</a>
+                </li>
+                <li>
+                  <a href="#divide">divide</a>
+                </li>
+                <li>
+                  <a href="#divmod">divmod</a>
+                </li>
+                <li>
+                  <a href="#ellipsis">ellipsis</a>
+                </li>
+                <li>
+                  <a href="#enumerate">enumerate</a>
+                </li>
+                <li>
+                  <a href="#eval">eval</a>
+                </li>
+                <li>
+                  <a href="#exec">exec</a>
+                </li>
+                <li>
+                  <a href="#execfile">execfile</a>
+                </li>
+                <li>
+                  <a href="#file">file</a>
+                </li>
+                <li>
+                  <a href="#format">format</a>
+                </li>
+                <li>
+                  <a href="#generator">generator</a>
+                </li>
+                <li>
+                  <a href="#getattr">getattr</a>
+                </li>
+                <li>
+                  <a href="#globals">globals</a>
+                </li>
+                <li>
+                  <a href="#hasattr">hasattr</a>
+                </li>
+                <li>
+                  <a href="#hash">hash</a>
+                </li>
+                <li>
+                  <a href="#help">help</a>
+                </li>
+                <li>
+                  <a href="#hex">hex</a>
+                </li>
+                <li>
+                  <a href="#id">id</a>
+                </li>
+                <li>
+                  <a href="#import">import</a>
+                </li>
+                <li>
+                  <a href="#import_from">import_from</a>
+                </li>
+                <li>
+                  <a href="#input">input</a>
+                </li>
+                <li>
+                  <a href="#int">int</a>
+                </li>
+                <li>
+                  <a href="#intern">intern</a>
+                </li>
+                <li>
+                  <a href="#is">is</a>
+                </li>
+                <li>
+                  <a href="#isinstance">isinstance</a>
+                </li>
+                <li>
+                  <a href="#isnot">isnot</a>
+                </li>
+                <li>
+                  <a href="#issubclass">issubclass</a>
+                </li>
+                <li>
+                  <a href="#iter">iter</a>
+                </li>
+                <li>
+                  <a href="#kwargs">kwargs</a>
+                </li>
+                <li>
+                  <a href="#len">len</a>
+                </li>
+                <li>
+                  <a href="#list">list</a>
+                </li>
+                <li>
+                  <a href="#list_comp">list_comp</a>
+                </li>
+                <li>
+                  <a href="#load">load</a>
+                </li>
+                <li>
+                  <a href="#locals">locals</a>
+                </li>
+                <li>
+                  <a href="#long">long</a>
+                </li>
+                <li>
+                  <a href="#memoryview">memoryview</a>
+                </li>
+                <li>
+                  <a href="#module">module</a>
+                </li>
+                <li>
+                  <a href="#next">next</a>
+                </li>
+                <li>
+                  <a href="#object">object</a>
+                </li>
+                <li>
+                  <a href="#oct">oct</a>
+                </li>
+                <li>
+                  <a href="#open">open</a>
+                </li>
+                <li>
+                  <a href="#param">param</a>
+                </li>
+                <li>
+                  <a href="#print">print</a>
+                </li>
+                <li>
+                  <a href="#property">property</a>
+                </li>
+                <li>
+                  <a href="#range">range</a>
+                </li>
+                <li>
+                  <a href="#raw_input">raw_input</a>
+                </li>
+                <li>
+                  <a href="#reload">reload</a>
+                </li>
+                <li>
+                  <a href="#repr">repr</a>
+                </li>
+                <li>
+                  <a href="#reversed">reversed</a>
+                </li>
+                <li>
+                  <a href="#selector">selector</a>
+                </li>
+                <li>
+                  <a href="#set">set</a>
+                </li>
+                <li>
+                  <a href="#set_comp">set_comp</a>
+                </li>
+                <li>
+                  <a href="#setattr">setattr</a>
+                </li>
+                <li>
+                  <a href="#slice">slice</a>
+                </li>
+                <li>
+                  <a href="#sorted">sorted</a>
+                </li>
+                <li>
+                  <a href="#staticmethod">staticmethod</a>
+                </li>
+                <li>
+                  <a href="#store">store</a>
+                </li>
+                <li>
+                  <a href="#super">super</a>
+                </li>
+                <li>
+                  <a href="#try_except">try_except</a>
+                </li>
+                <li>
+                  <a href="#try_finally">try_finally</a>
+                </li>
+                <li>
+                  <a href="#tuple">tuple</a>
+                </li>
+                <li>
+                  <a href="#type">type</a>
+                </li>
+                <li>
+                  <a href="#unichr">unichr</a>
+                </li>
+                <li>
+                  <a href="#vars">vars</a>
+                </li>
+                <li>
+                  <a href="#xrange">xrange</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="jumbotron"><h1><span class="om-cd-name">python2</span></h1><hr/><p>
+    A CD that represents concepts of the Python Language, versions 2.0 - 2.7.
+
+    
+  </p><hr/><dl class="dl-horizontal"><dt>URL</dt><dd><a href="http://drosoft.org/cd/python2.ocd">http://drosoft.org/cd/python2.ocd</a></dd><dt>Base</dt><dd><a href="http://drosoft.org/cd">http://drosoft.org/cd</a></dd><dt>Date</dt><dd>2013-12-08</dd><dt>Status</dt><dd>private</dd><dt>Version</dt><dd>1.0</dd></dl></div>
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="args"/><b class="om-name">args</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#syntax</span><span class="clearfix"/></span></div><div class="panel-body">A Python list splat.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="as"/><b class="om-name">as</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python variable binding, e.g.: in except or with.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="basestring"/><b class="om-name">basestring</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="buffer"/><b class="om-name">buffer</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="callable"/><b class="om-name">callable</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="class"/><b class="om-name">class</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="classmethod"/><b class="om-name">classmethod</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="cmp"/><b class="om-name">cmp</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="coerce"/><b class="om-name">coerce</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="compare"/><b class="om-name">compare</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="compile"/><b class="om-name">compile</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="def"/><b class="om-name">def</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="del"/><b class="om-name">del</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#statement</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="delattr"/><b class="om-name">delattr</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="dict"/><b class="om-name">dict</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="dict_comp"/><b class="om-name">dict_comp</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="dir"/><b class="om-name">dir</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="divide"/><b class="om-name">divide</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="divmod"/><b class="om-name">divmod</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="ellipsis"/><b class="om-name">ellipsis</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="enumerate"/><b class="om-name">enumerate</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="eval"/><b class="om-name">eval</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="exec"/><b class="om-name">exec</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="execfile"/><b class="om-name">execfile</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="file"/><b class="om-name">file</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="format"/><b class="om-name">format</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="generator"/><b class="om-name">generator</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="getattr"/><b class="om-name">getattr</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="globals"/><b class="om-name">globals</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="hasattr"/><b class="om-name">hasattr</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="hash"/><b class="om-name">hash</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="help"/><b class="om-name">help</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="hex"/><b class="om-name">hex</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="id"/><b class="om-name">id</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="import"/><b class="om-name">import</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="import_from"/><b class="om-name">import_from</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="input"/><b class="om-name">input</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="int"/><b class="om-name">int</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="intern"/><b class="om-name">intern</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="is"/><b class="om-name">is</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="isinstance"/><b class="om-name">isinstance</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="isnot"/><b class="om-name">isnot</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="issubclass"/><b class="om-name">issubclass</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="iter"/><b class="om-name">iter</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="kwargs"/><b class="om-name">kwargs</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#syntax</span><span class="clearfix"/></span></div><div class="panel-body">A Python dictionary splat.<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="len"/><b class="om-name">len</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="list"/><b class="om-name">list</b><span class="om-role pull-right"> an application</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="list_comp"/><b class="om-name">list_comp</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="load"/><b class="om-name">load</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="locals"/><b class="om-name">locals</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="long"/><b class="om-name">long</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#type_constant</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="memoryview"/><b class="om-name">memoryview</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="module"/><b class="om-name">module</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="next"/><b class="om-name">next</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="object"/><b class="om-name">object</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="oct"/><b class="om-name">oct</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="open"/><b class="om-name">open</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="param"/><b class="om-name">param</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="print"/><b class="om-name">print</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#statement</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="property"/><b class="om-name">property</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="range"/><b class="om-name">range</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="raw_input"/><b class="om-name">raw_input</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="reload"/><b class="om-name">reload</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="repr"/><b class="om-name">repr</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="reversed"/><b class="om-name">reversed</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="selector"/><b class="om-name">selector</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="set"/><b class="om-name">set</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="set_comp"/><b class="om-name">set_comp</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="setattr"/><b class="om-name">setattr</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="slice"/><b class="om-name">slice</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="sorted"/><b class="om-name">sorted</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="staticmethod"/><b class="om-name">staticmethod</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="store"/><b class="om-name">store</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="super"/><b class="om-name">super</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="try_except"/><b class="om-name">try_except</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="try_finally"/><b class="om-name">try_finally</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="tuple"/><b class="om-name">tuple</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="type"/><b class="om-name">type</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="unichr"/><b class="om-name">unichr</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="vars"/><b class="om-name">vars</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+  <div class="panel panel-primary"><div class="panel-heading"><span class="panel-title"><a class="om-name-link" name="xrange"/><b class="om-name">xrange</b><span class="om-role pull-right"> a http://drosoft.org/cd/sts4#declaration</span><span class="clearfix"/></span></div><div class="panel-body">A Python .<hr/>
+    
+    
+    
+  </div></div>
+
+</div>
+    <script src="../../static/js/vendor/modernizr-2.6.2.min.js"> </script>
+    <script src="../../static/js/vendor/jquery-1.10.2.min.js"> </script>
+    <script src="../../static/js/bootstrap.min.js"> </script>
+  </body>
+</html>

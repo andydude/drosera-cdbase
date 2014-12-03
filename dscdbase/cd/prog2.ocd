@@ -26,19 +26,20 @@
     </Description>
 
     <Example>
-      The following represents (x += 1).
-      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera" xmlns:m="http://www.w3.org/1998/Math/MathML/">
+      The following represents (a += 1).
+      <drox:dl xmlns:drox="http://drosoft.org/ns/drosera"
+               xmlns:m="http://www.w3.org/1998/Math/MathML/">
         <m:csymbol cd="prog2"> assignment_operator </m:csymbol>
-        <drox:dt>
-          <m:ci> x </m:ci>
-        </drox:dt>
         <m:csymbol cd="arith1"> plus </m:csymbol>
+        <drox:dt>
+          <m:ci> a </m:ci>
+        </drox:dt>
         <m:cn> 1 </m:cn>
       </drox:dl>
     </Example>
 
     <CMP>
-      The following represents that (a += b) is equivalent to (a = a + b).
+      (a += b) is equivalent to (a = a + b).
     </CMP>
     <FMP>
       <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
@@ -46,8 +47,8 @@
           <OMS cd="relation1" name="eq"/>
           <OMA>
             <OMS cd="prog2" name="assignment_operator"/>
-            <OMV name="a"/>
             <OMS cd="arith1" name="plus"/>
+            <OMV name="a"/>
             <OMV name="b"/>
           </OMA>
           <OMA>
@@ -72,8 +73,8 @@
           <OMS cd="relation1" name="eq"/>
           <OMA>
             <OMS cd="prog2" name="assignment_operator"/>
-            <OMV name="a"/>
             <OMS cd="arith1" name="plus"/>
+            <OMV name="a"/>
             <OMI>1</OMI>
           </OMA>
           <OMA>
@@ -96,8 +97,8 @@
           <OMS cd="relation1" name="eq"/>
           <OMA>
             <OMS cd="prog2" name="assignment_operator"/>
-            <OMV name="a"/>
             <OMS cd="arith1" name="plus"/>
+            <OMV name="a"/>
             <OMI>1</OMI>
           </OMA>
           <OMA>
@@ -114,82 +115,401 @@
   </CDDefinition>
 
   <CDDefinition>
+    <Name> assignment_operator_expr </Name>
+    <Role> application </Role>
+    <Description>
+      This is an N-ary function that executes all of its arguments in sequence, then returns the output of the last argument. See also: Lisp progn. See also: Scheme begin.
+    </Description>
+
+    <CMP>
+      The following represents that (a += 1) is equivalent to (++a).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="assignment_operator_expr"/>
+            <OMS cd="arith1" name="plus"/>
+            <OMV name="a"/>
+            <OMI>1</OMI>
+          </OMA>
+          <OMA>
+            <OMS cd="prog2" name="pre_increment"/>
+            <OMV name="a"/>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+    <CMP>
+      assignment_operator_expr(p, a, b) is equivalent to assignment_expr(a, p(a, b)).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="assignment_operator_expr"/>
+            <OMV name="p"/>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMA>
+          <OMA>
+            <OMS cd="prog2" name="assignment_expr"/>
+            <OMV name="a"/>
+            <OMA>
+              <OMV name="p"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+  </CDDefinition>
+  
+  <CDDefinition>
+    <Name> assignment_expr </Name>
+    <Role> application </Role>
+    <Description>
+      This is an N-ary function that executes all of its arguments in sequence, then returns the output of the last argument. See also: Lisp progn. See also: Scheme begin.
+    </Description>
+
+    <CMP>
+      The following represents that (a = a + 1) is equivalent to (++a).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="assignment_expr"/>
+            <OMV name="a"/>
+            <OMA>
+              <OMS cd="arith1" name="plus"/>
+              <OMV name="a"/>
+              <OMI>1</OMI>
+            </OMA>
+          </OMA>
+          <OMA>
+            <OMS cd="prog2" name="pre_increment"/>
+            <OMV name="a"/>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+    <CMP>
+      assignment_expr(a, b) is equivalent to begin(assignment(a, b), a).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="assignment_expr"/>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMA>
+          <OMA>
+            <OMS cd="prog2" name="begin"/>
+            <OMA>
+              <OMS cd="prog" name="assignment"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMV name="a"/>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+  </CDDefinition>
+  
+  <CDDefinition>
     <Name> begin </Name>
     <Role> application </Role>
     <Description>
       This is an N-ary function that executes all of its arguments in sequence, then returns the output of the last argument. See also: Lisp progn. See also: Scheme begin.
     </Description>
+
+    <CMP>
+      forall[a, b] block⁡(a, b) is equivalent to begin⁡(a, b, void⁡()).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="block"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog2" name="begin"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+              <OMA>
+                <OMS cd="prog2" name="void"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+    
+    <CMP>
+      forall[a, b] begin⁡(a, b) is equivalent to (lambda[] block⁡(a, return⁡(b)))().
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="begin"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMBIND>
+                <OMS cd="fns1" name="lambda"/>
+                <OMBVAR>
+                </OMBVAR>
+                <OMA>
+                  <OMS cd="prog1" name="block"/>
+                  <OMV name="a"/>
+                  <OMA>
+                    <OMS cd="prog1" name="return"/>
+                    <OMV name="b"/>
+                  </OMA>
+                </OMA>
+              </OMBIND>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
     <Name> break </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a control flow statement similar to prog1:return or prog2:goto, but jumps to the end of a loop, so that the loop ends.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> continue </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a control flow statement similar to prog1:return or prog2:goto, but jumps to the beginning of a loop, so that the loop may be run again.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> delete </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a memory management expression which deallocates memory.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> do_if </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      Unlike prog1:if and prog2:if, this definition allows you to make assignments and declarations that are lexically scoped to this block. Any declarations made with the first parameter are available to the rest of the parameters, but are not available outside of this block.
     </Description>
+    
+    <CMP>
+      forall[a, b] do_if⁡(a, b, c) is equivalent to if⁡(begin⁡(a, b), c).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+            <OMV name="c"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="do_if"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+              <OMV name="c"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog2" name="if"/>
+              <OMA>
+                <OMS cd="prog2" name="begin"/>
+                <OMV name="a"/>
+                <OMV name="b"/>
+              </OMA>
+              <OMV name="c"/>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
     <Name> do_if_not </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a control flow statement which performs an action, then a condition, and if the condition is false, then performs the alternative. This is the negation of prog2:do_if.
     </Description>
+    
+    <CMP>
+      forall[a, b, c] do_if_not⁡(a, b, c) is equivalent to do_if⁡(a, not(b), c).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+            <OMV name="c"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="do_if_not"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+              <OMV name="c"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog2" name="do_if"/>
+              <OMV name="a"/>
+              <OMA>
+                <OMS cd="logic1" name="not"/>
+                <OMV name="b"/>
+              </OMA>
+              <OMV name="c"/>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
     <Name> do_while </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      Unlike prog1:while, this performs the body regardless of the condition. 
     </Description>
+
+    <CMP>
+      forall[a, b] do_while⁡(a, b) is equivalent to block⁡(a, while⁡(b, a)).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="do_while"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog1" name="block"/>
+              <OMV name="a"/>
+              <OMA>
+                <OMS cd="prog1" name="while"/>
+                <OMV name="b"/>
+                <OMV name="a"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
     <Name> do_while_not </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is the negation of prog2:do_while.
     </Description>
+
+    <CMP>
+      forall[a, b] do_while_not⁡(a, b) is equivalent to do_while⁡(a, not(b)).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="do_while_not"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog1" name="do_while"/>
+              <OMV name="a"/>
+              <OMA>
+                <OMS cd="logic1" name="not"/>
+                <OMV name="b"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
     <Name> ellipsis </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> constant </Role>
     <Description>
-      A Java class definition.
+      This is a constant which represents repetition.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> else </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement_else </Role>
     <Description>
-      A Java class definition.
+      This is a constant which represents the alternative part of an if statement.
     </Description>
   </CDDefinition>
 
@@ -197,23 +517,23 @@
     <Name> empty </Name>
     <Role> http://drosoft.org/cd/sts4#declaration </Role>
     <Description>
-      A Java class definition.
+      This represents the empty statement, written ";" in the C programming language.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> fallthrough </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a control flow statement similar to prog1:return or prog2:goto, but jumps to the next part of a case or cond statement.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> goto </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a control flow statement similar to prog1:return, but jumps to the given label.
     </Description>
   </CDDefinition>
 
@@ -224,14 +544,118 @@
       Unlike prog1:if (which represents a void-returning ternary operator), this statement represents a binary operator. This statement takes 2 arguments: the condition, and the consequent. There is no return value.
       See also: Lisp/Scheme when.
     </Description>
+    
+    <CMP>
+      forall[a, b] prog2:if⁡(a, b) is equivalent to prog1:if⁡(a, b, prog2:void⁡()).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="if"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog1" name="if"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+              <OMA>
+                <OMS cd="prog2" name="void"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
-    <Name> if_exp </Name>
+    <Name> if_expr </Name>
     <Role> application </Role>
     <Description>
       Unlike prog1:if (which represents a void-returning ternary operator), this application represents a value-returning ternary operator. This statement takes 3 arguments: the condition, the consequent, and the alternative. If the condition is true, then the return value is that of the consequent, if it is false, then the return value is that of the alternative. See also: C ternary operator (?:). See also: Lisp/Scheme if.
     </Description>
+    
+    <CMP>
+      if_expr⁡(a, b, c) is equivalent to (lambda[] if⁡(a, return⁡(b), return⁡(c)))().
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="if_expr"/>
+            <OMV name="a"/>
+            <OMV name="b"/>
+            <OMV name="c"/>
+          </OMA>
+          <OMA>
+            <OMBIND>
+              <OMS cd="fns1" name="lambda"/>
+              <OMBVAR>
+              </OMBVAR>
+              <OMA>
+                <OMS cd="prog1" name="if"/>
+                <OMV name="a"/>
+                <OMA>
+                  <OMS cd="prog1" name="return"/>
+                  <OMV name="b"/>
+                </OMA>
+                <OMA>
+                  <OMS cd="prog1" name="return"/>
+                  <OMV name="c"/>
+                </OMA>
+              </OMA>
+            </OMBIND>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
+    <CMP>
+      if⁡(a, b, c) is equivalent to if_expr⁡(a, begin⁡(b, void⁡()), begin⁡(c, void⁡())).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="prog2" name="if"/>
+            <OMV name="a"/>
+            <OMV name="b"/>
+            <OMV name="c"/>
+          </OMA>
+          <OMA>
+            <OMS cd="prog1" name="if_expr"/>
+            <OMV name="a"/>
+            <OMA>
+              <OMS cd="prog2" name="begin"/>
+              <OMV name="b"/>
+              <OMA>
+                <OMS cd="prog2" name="void"/>
+              </OMA>
+            </OMA>
+            <OMA>
+              <OMS cd="prog2" name="begin"/>
+              <OMV name="c"/>
+              <OMA>
+                <OMS cd="prog2" name="void"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
@@ -241,37 +665,85 @@
       Unlike prog1:if (which represents a void-returning ternary operator), this statement represents a binary operator. This statement takes 2 arguments: the condition, and the alternative. There is no return value. 
       See also: Lisp/Scheme unless.
     </Description>
+
+    <CMP>
+      forall[a, b] if_not⁡(a, b) is equivalent to if⁡(not(a), b).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="if_not"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog2" name="if"/>
+              <OMA>
+                <OMS cd="logic1" name="not"/>
+                <OMV name="a"/>
+              </OMA>
+              <OMV name="b"/>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
     <Name> post_increment </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> application </Role>
     <Description>
-      A Java class definition.
+      This function will increment the first argument.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> post_decrement </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> application </Role>
     <Description>
-      A Java class definition.
+      This function will decrement the first argument.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> pre_increment </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> application </Role>
     <Description>
-      A Java class definition.
+      This function will increment the first argument.
     </Description>
   </CDDefinition>
 
   <CDDefinition>
     <Name> pre_decrement </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> application </Role>
     <Description>
-      A Java class definition.
+      This function will decrement the first argument.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> increment </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      This statement will increment the first argument.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
+    <Name> decrement </Name>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
+    <Description>
+      This statement will decrement the first argument.
     </Description>
   </CDDefinition>
 
@@ -279,7 +751,7 @@
     <Name> label </Name>
     <Role> http://drosoft.org/cd/sts4#declaration </Role>
     <Description>
-      A Java class definition.
+      This is a control flow declaration that may be used with other statements in order to specify a different location to jump to other than the default location.
     </Description>
   </CDDefinition>
 
@@ -287,7 +759,7 @@
     <Name> namespace_selector </Name>
     <Role> application </Role>
     <Description>
-      A Java class definition.
+      TODO: move to names1 CD.
     </Description>
   </CDDefinition>
 
@@ -295,7 +767,7 @@
     <Name> new </Name>
     <Role> http://drosoft.org/cd/sts4#declaration </Role>
     <Description>
-      A Java class definition.
+      This is a memory management expression which allocates memory.
     </Description>
   </CDDefinition>
 
@@ -303,7 +775,7 @@
     <Name> null </Name>
     <Role> constant </Role>
     <Description>
-      A Java class definition.
+      This is a constant which represents the absence of value.
     </Description>
   </CDDefinition>
 
@@ -311,7 +783,7 @@
     <Name> print </Name>
     <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a I/O statement which outputs a string to the console's standard output.
     </Description>
   </CDDefinition>
 
@@ -319,7 +791,7 @@
     <Name> println </Name>
     <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is a I/O statement which outputs a string to the console's standard output, followed by a newline.
     </Description>
   </CDDefinition>
 
@@ -332,10 +804,18 @@
   </CDDefinition>
 
   <CDDefinition>
+    <Name> values </Name>
+    <Role> application </Role>
+    <Description>
+      This is an N-ary function that represents multiple return values. It should be equivalent to calling prog1:return with multiple arguments.
+    </Description>
+  </CDDefinition>
+
+  <CDDefinition>
     <Name> void </Name>
     <Role> application </Role>
     <Description>
-       This is an N-ary function that executes all of its arguments in sequence, but does nothing with their return values, they are all discarded. See also: Shell (sh, bash, csh, zsh) colon (:) command. See also: C blocks ({}). See also: JavaScript void(). Represents no return value.
+       This is an N-ary function that executes all of its arguments in sequence, but does nothing with their return values, they are all discarded. See also: Shell (sh, bash, csh, zsh) colon (:) command. See also: C blocks ({}). See also: JavaScript void(). Represents no return value. It is equivalent in every way to prog1:block, but it is usually invoked without any arguments, whereas prog1:block is usually invoked with one or more arguments.
     </Description>
   </CDDefinition>
 
@@ -343,15 +823,47 @@
     <Name> while_not </Name>
     <Role> http://drosoft.org/cd/sts4#declaration </Role>
     <Description>
-      A Java class definition.
+      This is the negation of prog1:while.
     </Description>
+
+    <CMP>
+      forall[a, b] while_not⁡(a, b) is equivalent to while⁡(not(a), b).
+    </CMP>
+    <FMP>
+      <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="prog2" name="while_not"/>
+              <OMV name="a"/>
+              <OMV name="b"/>
+            </OMA>
+            <OMA>
+              <OMS cd="prog1" name="while"/>
+              <OMA>
+                <OMS cd="logic1" name="not"/>
+                <OMV name="a"/>
+              </OMA>
+              <OMV name="b"/>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMOBJ>
+    </FMP>
+
   </CDDefinition>
 
   <CDDefinition>
     <Name> yield </Name>
-    <Role> http://drosoft.org/cd/sts4#declaration </Role>
+    <Role> http://drosoft.org/cd/sts4#statement </Role>
     <Description>
-      A Java class definition.
+      This is similar to return, but usually used with coroutines.
     </Description>
   </CDDefinition>
 
